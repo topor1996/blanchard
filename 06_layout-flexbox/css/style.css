@@ -198,7 +198,7 @@ html {
   width: 66px;
 }
 
-.space-advantages-list {
+.section-advantages-list {
   margin-top: 30px;
 }
 
@@ -236,7 +236,10 @@ html {
 .section-placement-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+}
+
+.section-placement-item:not(:nth-child(3n)) {
+  margin-right: auto;
 }
 
 .section-placement-item {
