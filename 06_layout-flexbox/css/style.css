@@ -40,12 +40,20 @@ html {
 .header-top {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.header-nav {
+  margin-left: 45px;
+}
+
+.header-top-left {
+  display: flex;
+  align-items: center;
 }
 
 .header-nav-list {
   display: flex;
-  margin-left: 45px;
-  margin-top: 27px;
 }
 
 .header-tel {
@@ -59,20 +67,21 @@ html {
 .lower-header {
   margin-top: 30px;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: #FFFFFF;
   border-radius: 15px;
   height: 70px;
 }
 
-.right-header-btn-1 {
-  margin-left: auto;
-  margin-top: 27px;
+.right-header-btn {
+  display: flex;
+  align-items: center;
 }
 
 .right-header-btn-2 {
-  padding-left: 30px;
-  margin-top: 27px;
   margin-right: 45px;
+  margin-left: 15px;
 }
 
 .section-heading {
@@ -109,23 +118,22 @@ html {
   padding: 40px;
 }
 
-.section-booking-list {
+.section-booking-cards {
   display: flex;
-  justify-content: space-between;
 }
 
-.section-booking-top {
+.section-booking-list {
+  display: flex;
   flex-direction: column;
 }
 
-.section-booking-right {
-  padding-left: 23px;
+.section-booking-right-cards {
+  margin-left: auto;
 }
 
 .section-booking-item-right {
   outline: 3px solid red;
   width: 573px;
-  flex-grow: 1;
   padding-left: 40px;
   padding-top: 190px;
   padding-bottom: 103px;
@@ -157,6 +165,7 @@ html {
 
 .section-services-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .section-service-down {
@@ -166,11 +175,11 @@ html {
 .section-services-item {
   display: grid;
   margin-top: 20px;
+  width: 573px;
+  margin-right: auto;
 }
 
 .section-service-icon {
-  width: -webkit-fill-available;
-  ;
   border-radius: 15px 15px 0px 0px;
 }
 
@@ -199,7 +208,9 @@ html {
 }
 
 .section-advantages-list {
-  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .section-advantages-item {
@@ -210,21 +221,7 @@ html {
   padding-right: 42px;
   background-color: white;
   border-radius: 15px;
-}
-
-.section-advantages-item:not(:first-child) {
-  margin-left: 23px;
-}
-
-.section-advantages-top {
-  display: flex;
-  justify-content: space-between;
-}
-
-.section-advantages-down {
-  display: flex;
-  margin-top: 23px;
-  justify-content: space-between;
+  margin-top: 20px;
 }
 
 /* Placemet */
