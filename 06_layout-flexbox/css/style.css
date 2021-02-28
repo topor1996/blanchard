@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-family: sans-serif;
+  background-color: #E5E5E5;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+}
+
+/*Header*/
+
+.header {
+  height: 154px;
+}
+
+.header-container {
+  margin-top: 30px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-list {
+  display: flex;
+  margin-left: 45px;
+  margin-top: 27px;
+}
+
+.header-tel {
+  margin-left: 34px;
+}
+
+.header-nav-item {
+  margin-right: 50px;
+}
+
+.lower-header {
+  margin-top: 30px;
+  display: flex;
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  height: 70px;
+}
+
+.right-header-btn-1 {
+  margin-left: auto;
+  margin-top: 27px;
+}
+
+.right-header-btn-2 {
+  padding-left: 30px;
+  margin-top: 27px;
+  margin-right: 45px;
+}
+
+.section-heading {
+  margin-left: 40px;
+}
+
+/*Btn*/
+
+.btn {
+  padding: 13px 20px;
+  line-height: 1;
+  color: #CC9933;
+  background-color: white;
+  font-size: 16px;
+  border: 1px solid #CC9933;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.btn-personal-account {
+  margin-left: auto;
+}
+
+/*Booking*/
+
+.section-booking {
+  padding-top: 70px;
+}
+
+.section-booking-item {
+  outline: 3px solid red;
+  margin-bottom: 23px;
+  width: 573px;
+  padding: 40px;
+}
+
+.section-booking-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-booking-top {
+  flex-direction: column;
+}
+
+.section-booking-right {
+  padding-left: 23px;
+}
+
+.section-booking-item-right {
+  outline: 3px solid red;
+  width: 573px;
+  flex-grow: 1;
+  padding-left: 40px;
+  padding-top: 190px;
+  padding-bottom: 103px;
+}
+
+.section-booking-head {
+  padding-top: 20px;
+}
+
+/*About Us*/
+
+.about-us-container {
+  margin-top: 69px;
+}
+
+.about-us-content {
+  max-width: 70%;
+}
+
+.section-description {
+  padding-top: 11px;
+}
+
+/*Services*/
+
+.services-container {
+  margin-top: 70px;
+}
+
+.section-services-list {
+  display: flex;
+}
+
+.section-service-down {
+  padding-left: 23px;
+}
+
+.section-services-item {
+  display: grid;
+  margin-top: 20px;
+}
+
+.section-service-icon {
+  width: -webkit-fill-available;
+  ;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.section-service-info {
+  padding-bottom: 50px;
+  background-color: white;
+  border-radius: 0px 0px 15px 15px;
+  padding-top: 64px;
+  padding-left: 45px;
+}
+
+.section-services-item-description {
+  max-width: 80%;
+}
+
+/* Advantages */
+
+.section-advantages {
+  margin-top: 70px;
+  width: 100%;
+}
+
+.section-advantages-icon {
+  height: 66px;
+  width: 66px;
+}
+
+.space-advantages-list {
+  margin-top: 30px;
+}
+
+.section-advantages-item {
+  width: 275px;
+  padding-left: 45px;
+  padding-top: 40px;
+  padding-bottom: 41px;
+  padding-right: 42px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+.section-advantages-item:not(:first-child) {
+  margin-left: 23px;
+}
+
+.section-advantages-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-advantages-down {
+  display: flex;
+  margin-top: 23px;
+  justify-content: space-between;
+}
+
+/* Placemet */
+
+.section-placement {
+  margin-top: 70px;
+}
+
+.section-placement-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section-placement-item {
+  margin-top: 23px;
+  width: 374px;
+  display: grid;
+}
+
+.section-placement-item-city {
+  padding-bottom: 20px;
+}
+
+.section-placement-down {
+  padding-left: 45px;
+  background-color: white;
+  border-radius: 0px 0px 15px 15px;
+  padding-top: 36px;
+}
+
+.placement-btn {
+  display: inline-block;
+  margin-bottom: 41px;
+}
+
+.section-placement-star {
+  display: flex;
+}
+
+.section-placement-item-description {
+  padding-right: 44px;
+}
+
+.btn-section-placement-more {
+  text-align: center;
+  padding-top: 373px;
+}
