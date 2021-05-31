@@ -20,7 +20,5 @@ window.addEventListener('DOMContentLoaded', function () {
     }
 }
 });  
-  
-
 
 
