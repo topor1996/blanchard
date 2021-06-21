@@ -1425,6 +1425,10 @@ outline-offset: 0;
   flex-wrap: wrap;
 }
 
+.event__list .swiper-wrapper {
+  flex-wrap: nowrap;
+}
+
 .event__list-swapper {
   display: none;
 }
