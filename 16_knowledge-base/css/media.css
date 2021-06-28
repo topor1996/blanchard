@@ -648,9 +648,6 @@
     padding-top: 111px;
     padding-bottom: 110px;
   }
-  .menu__form {
-    display: block;
-  }
   .list__item {
     line-height: 64px;
   }
@@ -668,11 +665,6 @@
   }
   .text-about {
     width: 100%;
-  }
-  .search__btn {
-    border: none;
-    background-color: transparent;
-    padding: 0;
   }
   .search-button>svg {
     width: 29px;
@@ -774,10 +766,6 @@
     margin-bottom: 50px;
     color: #FFFFFF;
     text-decoration: none;
-  }
-  #search__svg {
-    width: 29px;
-    height: 29px;
   }
   .gallery-text {
     max-width: 100%;
