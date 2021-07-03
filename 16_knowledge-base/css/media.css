@@ -1155,20 +1155,21 @@
 }
 
 @media (max-width:880px) {
-  .navigation-gallery-slider {
-    width: 27%;
-  }
   .publish__top-btn {
     width: 25%;
+  }
+  .navigation-gallery-slider {
+    margin-top: 31px;
+    margin-bottom: 17px;
+  }
+  .gallery-block {
+  margin-top: 0;
   }
 }
 
 @media (max-width:875px) {
   .section-first__title {
     width: 77%;
-  }
-  .navigation-gallery-slider {
-    width: 27%;
   }
   .publish__top-btn {
     width: 24%;
@@ -1218,6 +1219,9 @@
   .search-close-button--appear>svg {
     width: 16px;
     height: 16px;
+  }
+  .slider {
+    min-height: 376px;
   }
   .search-button-is_active {
     left: 10%;
