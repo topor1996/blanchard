@@ -164,14 +164,15 @@ window.addEventListener('DOMContentLoaded', function () {
   var swiper = new Swiper(".gallery-slider", {
     slidesPerView: 3,
     slidesPerColumn: 2,
+    slidesPerGroup: 3,
     spaceBetween: 45,
     pagination: {
       el: ".swiper-pagination",
       type: "fraction"
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+      nextEl: ".gallery-button-next",
+      prevEl: ".gallery-button-prev"
     },
     breakpoints: {
       // when window width is >= 320px
@@ -234,8 +235,8 @@ window.addEventListener('DOMContentLoaded', function () {
       type: "fraction"
     },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+      nextEl: ".button-next-publish",
+      prevEl: ".button-prev-publish"
     },
     // Responsive breakpoints
     breakpoints: _defineProperty({
@@ -286,8 +287,8 @@ window.addEventListener('DOMContentLoaded', function () {
     loop: true,
     loopFillGroupWithBlank: true,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
+      nextEl: ".button-project-next",
+      prevEl: ".button-project-prev"
     },
     breakpoints: {
       // when window width is >= 320px
