@@ -23,14 +23,15 @@
   <script src="js/inputmask.min.js"></script>
   <script src="js/just-validate.min.js"></script>
   <script src="js/jquery-3.6.0.min.js"></script>
-  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/tabs.js"></script>
   <script src="js/burger.js"></script>
 
   <script src="js/inputmask.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"/>
-  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+  <link rel="stylesheet" href="css/styles/choices.min.css" />
+  <script src="js/scripts/choices.min.js"></script>
 
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -47,7 +48,7 @@
   <header class="header">
     <div class="header-top">
       <div class="container header-container">
-        <button class="nav__burger" onclick="" aria-label="Открыть меню">
+        <button class="nav__burger" aria-label="Открыть меню">
           <svg width="36" height="29" viewBox="0 0 36 29" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="36" height="3.65217" transform="matrix(-1 0 0 1 36 0.699997)" fill="white" />
             <path d="M28.2002 12.8739H0.00019455V16.5261H28.2002V12.8739Z" fill="white" />
@@ -56,7 +57,7 @@
         </button>
         <div class="header-burger-menu">
           <nav class="header__nav header__menu">
-            <ul id="Dropdown" class="header-nav__list menu__list list">
+            <ul id="Dropdown" class="header-nav__list item__nav__list list">
               <li class="list__item item__top header-nav__item">
                 <a class="list__link" href="#about-us">О нас</a>
               </li>
@@ -95,31 +96,7 @@
         <a href="#" class="header__logo">
           <img src="img/logo.png" alt="Логотип">
         </a>
-        <nav class="header__menu">
-          <ul class="menu__list list">
-            <li class="list__item item__top">
-              <a class="list__link" href="#about-us">О нас</a>
-            </li>
-            <li class="list__item item__top">
-              <a class="list__link" href="#gallery">Галерея</a>
-            </li>
-            <li class="list__item item__top">
-              <a class="list__link" href="#catalog">Каталог</a>
-            </li>
-            <li class="list__item item__top">
-              <a class="list__link" href="#events">События</a>
-            </li>
-            <li class="list__item item__top">
-              <a class="list__link" href="#publishing">Издания</a>
-            </li>
-            <li class="list__item item__top">
-              <a class="list__link" href="#project">Проекты</a>
-            </li>
-            <li class="list__item item__top">
-              <a class="list__link" href="#contacts">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+
         <a href="#" class="header__entry effects" tabindex="0">
           <svg class="svg-enter" width="18" height="13" viewBox="0 0 18 13" fill="white">
             <path class="entry__img"
@@ -128,7 +105,7 @@
           </svg>
           Войти
         </a>
-        <form class="search" tabindex="0">
+        <form class="search">
           <input class="search-input" type="search" placeholder="Поиск по сайту">
           <button class="button search-button" aria-label="Поиск">
             <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -260,10 +237,10 @@
         <div class="slick-slide img-trust"></div>
       </div>
     </section>
-    <section class="about-us">
+    <section class="about-us" id="about-us">
       <div class="container about-container">
-        <h2 class="heading-h2">
-          <a id="about-us"></a>
+        <h2 class="heading-about">
+
           О нас
         </h2>
         <p class="text-about">
@@ -278,12 +255,11 @@
         </p>
       </div>
     </section>
-    <section class="gallery">
+    <section class="gallery" id="gallery">
       <div class="container gallery_container">
         <div class="gallery__block">
           <div class="gallery-filter">
             <h2 class="title gallery-title">
-              <a id="gallery"></a>
               Галерея
             </h2>
             <span class="gallery-filter-row">Фильтровать по:</span>
@@ -381,35 +357,22 @@
       </div>
 
     </section>
-    <section class="catalog">
+    <section class="catalog" id="catalog">
       <div class="container catalog-container">
         <div class="top-catalog">
           <h2 class="catalog-tittle">
-            <a id="catalog"></a>
             Каталог
           </h2>
           <div class="flag">
-            <button class="flag-click" data-tab="four"><img class="img-flag-click" src="img/im4.png" alt=""></button>
-            <button class="flag-click" data-tab="four"><img class="img-flag-click" src="img/im6.png" alt=""></button>
-            <button class="flag-click" data-tab="four"><img class="img-flag-click" src="img/im7.png" alt=""></button>
-            <button class="flag-click" data-tab="five"><img class="img-flag-click" src="img/im8.png" alt=""></button>
-            <button class="flag-click" data-tab="four"><img class="img-flag-click" src="img/im5.png" alt=""></button>
+            <button class="flag-btn france" data-tab="four"></button>
+            <button class="flag-btn germany" data-tab="four"></button>
+            <button class="flag-btn italy" data-tab="four"></button>
+            <button class="flag-btn flag-btn_active russia" data-tab="five"></button>
+            <button class="flag-btn belgia" data-tab="four"></button>
           </div>
         </div>
-        <div class="language" data-content="four">
-          <h3>
-            La section est en construction
-            <br>
-            Abschnitt befindet sich im Aufbau
-            <br>
-            La sezione è in costruzione
-            <br>
-            Раздел находится в разработке
-            <br>
-            Section is under construction
-          </h3>
-        </div>
-        <div class="language language_active" data-content="five">
+
+        <div class="language language_active english" data-content="five">
           <p class="catalog-text">
             Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа
             политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь
@@ -445,59 +408,59 @@
               <a href="#gallery">В галерею</a>
             </div>
 
-            <ul id="accordion" class="catalog-right-block">
+            <ul class="catalog-right-block accordion">
               <li class="questions-content-heading">
                 <div class="catalog-right-heading">
                   <h4 class="catalog-right-header" tabindex="0">C 1400 по 1499 гг.</h4>
                   <button class="catalog-right-btn" aria-label="развернуть ссылку">
                   </button>
                 </div>
-                <div class="open-accordion-list perviy">
+                <div class="open-accordion-list">
                   <ul class="catalog-right-child catalog-firsth-child">
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
-                        href="#lorem">Бенедетто ди Биндо</a> </li>
+                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Бенедетто
+                        ди Биндо</a> </li>
                     <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
                         href="#lorem">Бергоньоне, Амброджо</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
-                        href="#lorem">Биссоло, Франческо</a></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Биссоло,
+                        Франческо</a></li>
                     <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
                         href="#lorem">Больтраффио, Джованни</a></li>
                     <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
                         href="#lorem">Бонсиньори, Франческо</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
-                        href="#lorem">Боттичини, Рафаэлло</a></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Боттичини,
+                        Рафаэлло</a></li>
                     <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
                         href="#lorem">Брамантино</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
-                        href="#lorem">Бреа, Людовико</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
-                        href="#lorem">Бьяджо д’Антонио Туччи</a></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Бреа,
+                        Людовико</a></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Бьяджо
+                        д’Антонио Туччи</a></li>
                     <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
                         href="#lorem">Веккьетта</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
-                        href="#lorem">Андреа Верроккьо</a></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Андреа
+                        Верроккьо</a></li>
                     <li class="artist artist_active" data-path="one" data-tab="one"><a class="artist__item"
                         href="#Girlandao">Доменико Гирландайо</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
-                        href="#lorem">Беноццо Гоццоли</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
-                        href="#lorem">Граначчи, Франческо</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
-                        href="#lorem">Грегорио ди Чекко</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
-                        href="#lorem">Джованни да Удине</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
-                        href="#lorem">Джованни ди Паоло</a></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Беноццо
+                        Гоццоли</a></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Граначчи,
+                        Франческо</a></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Грегорио
+                        ди Чекко</a></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Джованни
+                        да Удине</a></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Джованни
+                        ди Паоло</a></li>
                     <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
                         href="#lorem">Джорджоне</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
-                        href="#lorem">Парентино, Бернардо</a></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Парентино,
+                        Бернардо</a></li>
                     <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
                         href="#lorem">Пезеллино</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
-                        href="#lorem">Пьетро Перуджино</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
-                        href="#lorem">Перуцци, Бальдассаре</a></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Пьетро
+                        Перуджино</a></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Перуцци,
+                        Бальдассаре</a></li>
                     <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
                         href="#lorem">Пизанелло</a></li>
                     <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
@@ -511,7 +474,7 @@
                   <h4 class="catalog-right-header" tabindex="0">C 1500 по 1599 гг.</h4>
                   <button class="catalog-right-btn" aria-label="развернуть ссылку"></button>
                 </div>
-                <div class="open-accordion-list">
+                <div class="open-accordion-list ">
                   <ul class="catalog-right-child">
                     <li class="artist-lorem">
                       <img src="img/Rectangle212.png" alt="">
@@ -616,7 +579,7 @@
                   <h4 class="catalog-right-header" tabindex="0">C 2000 г.</h4>
                   <button class="catalog-right-btn" aria-label="развернуть ссылку"></button>
                 </div>
-                <div class="open-accordion-list" style="height: auto;">
+                <div class="open-accordion-list">
                   <ul class="catalog-right-child">
                     <li class="artist-lorem">
                       <img src="img/Rectangle212.png" alt="">
@@ -636,13 +599,164 @@
 
           </div>
         </div>
+        <div class="language" data-content="four">
+          <p class="catalog-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos reprehenderit est doloremque nam voluptas
+            vitae, perspiciatis ratione atque numquam provident ipsum ab quos veniam delectus unde corporis officia
+            nobis voluptatum!
+          </p>
+          <div class="catalog-block">
+            <div data-target="lorem" class="catalog-left-block-language" data-content="two">
+              <img class="img-hudojnik" src="img/hudojnik.png" alt="">
+              <h3>
+                What do we know about him?
+              </h3>
+              <p>Nothing yet... But we know for sure that there is something to see in the gallery!</p>
+              <a href="#gallery">To the gallery</a>
+            </div>
+
+
+            <div class="accordions">
+
+              <div class="catalog-right-heading">
+                <h4 class="catalog-right-header">From 1400 to 1499 .</h4>
+              </div>
+              <div class="open-accordion-list">
+                <div class="catalog-right-child">
+                  <div class="artist-lorem">
+                    <img src="img/Rectangle212.png" alt="">
+                    <div class="artist__list">
+                      <h3>
+                        It`s still empty here
+                      </h3>
+                      <p>And in the gallery you can always find something interesting for yourself</p>
+                      <a href="#gallery">To the gallery</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="catalog-right-heading">
+                <h4 class="catalog-right-header">From 1500 to 1599 .</h4>
+              </div>
+              <div class="open-accordion-list">
+                <div class="catalog-right-child">
+                  <div class="artist-lorem">
+                    <img src="img/Rectangle212.png" alt="">
+                    <div class="artist__list">
+                      <h3>
+                        It`s still empty here
+                      </h3>
+                      <p>And in the gallery you can always find something interesting for yourself</p>
+                      <a href="#gallery">To the gallery</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-right-heading">
+                <h4 class="catalog-right-header">From 1600 to 1699 .</h4>
+              </div>
+              <div class="open-accordion-list">
+                <div class="catalog-right-child">
+                  <div class="artist-lorem">
+                    <img src="img/Rectangle212.png" alt="">
+                    <div class="artist__list">
+                      <h3>
+                        It`s still empty here
+                      </h3>
+                      <p>And in the gallery you can always find something interesting for yourself</p>
+                      <a href="#gallery">To the gallery</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="catalog-right-heading">
+                <h4 class="catalog-right-header">From 1700 to 1799 .</h4>
+              </div>
+              <div class="open-accordion-list">
+                <div class="catalog-right-child">
+                  <div class="artist-lorem">
+                    <img src="img/Rectangle212.png" alt="">
+                    <div class="artist__list">
+                      <h3>
+                        It`s still empty here
+                      </h3>
+                      <p>And in the gallery you can always find something interesting for yourself</p>
+                      <a href="#gallery">To the gallery</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-right-heading">
+                <h4 class="catalog-right-header">From 1800 to 1899 .</h4>
+              </div>
+              <div class="open-accordion-list">
+                <div class="catalog-right-child">
+                  <div class="artist-lorem">
+                    <img src="img/Rectangle212.png" alt="">
+                    <div class="artist__list">
+                      <h3>
+                        It`s still empty here
+                      </h3>
+                      <p>And in the gallery you can always find something interesting for yourself</p>
+                      <a href="#gallery">To the gallery</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-right-heading">
+                <h4 class="catalog-right-header">From 1900 to 1999 .</h4>
+              </div>
+              <div class="open-accordion-list">
+                <div class="catalog-right-child">
+                  <div class="artist-lorem">
+                    <img src="img/Rectangle212.png" alt="">
+                    <div class="artist__list">
+                      <h3>
+                        It`s still empty here
+                      </h3>
+                      <p>And in the gallery you can always find something interesting for yourself</p>
+                      <a href="#gallery">To the gallery</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog-right-heading">
+                <h4 class="catalog-right-header">From 2000 ...</h4>
+              </div>
+              <div class="open-accordion-list">
+                <div class="catalog-right-child">
+                  <div class="artist-lorem">
+                    <img src="img/Rectangle212.png" alt="">
+                    <div class="artist__list">
+                      <h3>
+                        It`s still empty here
+                      </h3>
+                      <p>And in the gallery you can always find something interesting for yourself</p>
+                      <a href="#gallery">To the gallery</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="event">
+    <section class="event" id="events">
       <div class="container event-container">
         <h2 class="event-tittle">
-          <a id="events"></a>
           События
         </h2>
         <div class="swiper-container event__list-swapper">
@@ -776,11 +890,10 @@
       </div>
     </section>
 
-    <section class="publishing">
+    <section class="publishing" id="publishing">
       <div class="container publishing-container">
         <div class="publishing__block">
           <h2 class="publishing__title">
-            <a id="publishing"></a>
             Издания
           </h2>
 
@@ -1270,10 +1383,9 @@
         </div>
       </div>
     </section>
-    <section class="projects-box" id="projects">
+    <section class="projects-box" id="project">
       <div class="container project-container">
         <h2 class="title projects-title">
-          <a id="project"></a>
           Проекты
         </h2>
         <p class="text projects-text">
@@ -1363,7 +1475,6 @@
     <section class="contacts-box" id="contacts">
       <div class="container contacts-container">
         <h2 class="title contacts-title">
-          <a id="contacts"></a>
           Контакты
         </h2>
       </div>
@@ -1406,16 +1517,14 @@
       <div class="footer__container">
         <a class="logo-footer" href="/"><img src="img/logo.png" alt="logo" class="footer__logo2"></a>
         <div class="footer__soc">
-          <a class="footer__social-img" onclick="Share.vkontakte('URL','TITLE','IMG_PATH','DESC');return false"
-            href="#"><svg class="vk" width="46" height="46" viewBox="0 0 46 46" fill="none"
+          <a class="footer__social-img" href="#"><svg class="vk" width="46" height="46" viewBox="0 0 46 46" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M22.6983 0C10.1628 0 0 10.1623 0 22.6983C0 35.2343 10.1628 45.3966 22.6983 45.3966C35.2338 45.3966 45.3966 35.2343 45.3966 22.6983C45.3966 10.1623 35.2338 0 22.6983 0ZM34.2121 25.1532C35.27 26.1865 36.3893 27.159 37.339 28.2991C37.7598 28.8035 38.1564 29.325 38.4582 29.9116C38.8892 30.748 38.5 31.6652 37.7514 31.7149L33.1012 31.714C31.9002 31.8134 30.9445 31.329 30.1387 30.5079C29.4955 29.8535 28.8987 29.1546 28.2792 28.4779C28.0261 28.2002 27.7595 27.9388 27.4418 27.733C26.8079 27.3206 26.2571 27.4469 25.8939 28.1092C25.5238 28.7831 25.4393 29.5298 25.404 30.2799C25.3534 31.3764 25.0227 31.6629 23.9225 31.7145C21.5716 31.8245 19.341 31.4679 17.2679 30.2827C15.439 29.2373 14.0235 27.7618 12.79 26.0913C10.388 22.8348 8.54849 19.2607 6.89564 15.5839C6.52364 14.7559 6.79579 14.3128 7.70929 14.2956C9.227 14.2664 10.7447 14.2701 12.2624 14.2942C12.8801 14.304 13.2888 14.6574 13.5261 15.2403C14.3463 17.2581 15.3517 19.178 16.6117 20.9586C16.9474 21.4328 17.2902 21.9055 17.7783 22.2404C18.317 22.6101 18.7275 22.4879 18.9816 21.8865C19.1441 21.5043 19.2143 21.0956 19.2495 20.686C19.3703 19.283 19.3847 17.8805 19.1757 16.483C19.0457 15.6085 18.5539 15.0438 17.6821 14.8785C17.2382 14.7944 17.3032 14.63 17.5191 14.3764C17.8939 13.938 18.245 13.6668 18.9468 13.6668L24.2007 13.6659C25.0287 13.8284 25.2145 14.2 25.3269 15.0341L25.3315 20.8727C25.3218 21.1954 25.4936 22.1521 26.0732 22.3635C26.5376 22.5167 26.8441 22.1442 27.1219 21.8503C28.3818 20.5132 29.2795 18.9351 30.0834 17.3018C30.4382 16.5815 30.7443 15.8361 31.0415 15.0893C31.2626 14.5371 31.6062 14.2654 32.2295 14.2747L37.2888 14.2808C37.4379 14.2808 37.5893 14.2822 37.737 14.3077C38.5897 14.4535 38.8233 14.8204 38.5595 15.6522C38.1443 16.9591 37.3376 18.0476 36.549 19.139C35.7038 20.3075 34.8024 21.4351 33.9655 22.6087C33.1964 23.6815 33.2572 24.2216 34.2121 25.1532Z"
                 fill="#CACACA" />
             </svg></a>
-          <a class="footer__social-img" onclick="Share.instagram('URL','TITLE','IMG_PATH','DESC');return false"
-            href="#"><svg class="inst" width="46" height="46" viewBox="0 0 46 46" fill="none"
-              xmlns="http://www.w3.org/2000/svg">
+          <a class="footer__social-img" href="#"><svg class="inst" width="46" height="46" viewBox="0 0 46 46"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0)">
                 <path
                   d="M18.7503 22.6981C18.7503 25.0976 20.6954 27.0427 23.0949 27.0427C25.4944 27.0427 27.4395 25.0976 27.4395 22.6981C27.4395 20.2986 25.4944 18.3535 23.0949 18.3535C20.6954 18.3535 18.7503 20.2986 18.7503 22.6981Z"
@@ -1434,8 +1543,7 @@
               </defs>
             </svg>
           </a>
-          <a class="footer__social-img" onclick="Share.facebook('URL','TITLE','IMG_PATH','DESC');return false"
-            href="#"><svg class="fb" width="47" height="46" viewBox="0 0 47 46" fill="none"
+          <a class="footer__social-img" href="#"><svg class="fb" width="47" height="46" viewBox="0 0 47 46" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M23.4915 0.0908203C11.0074 0.0908203 0.793213 10.3233 0.793213 22.9259C0.793213 34.3206 9.10078 43.7782 19.9506 45.4874V29.5348H14.1852V22.9259H19.9506V17.8894C19.9506 12.1692 23.3326 9.02429 28.5305 9.02429C31.0046 9.02429 33.5922 9.45729 33.5922 9.45729V15.0863H30.7322C27.9176 15.0863 27.0324 16.8411 27.0324 18.6414V22.9259H33.3425L32.3211 29.5348H27.0324V45.4874C32.3811 44.6393 37.2516 41.8993 40.7647 37.7619C44.2778 33.6246 46.2019 28.3626 46.1898 22.9259C46.1898 10.3233 35.9755 0.0908203 23.4915 0.0908203Z"

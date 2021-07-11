@@ -1,25 +1,17 @@
 window.addEventListener('DOMContentLoaded', function () {
-  $(function () {
-    $("#accordion").accordion();
-  });
-  $("#accordion").accordion({ collapsible: true });
-  $("#accordion").accordion("option", "active", null);
-  $("#accordion").accordion({ heightStyle: "content" });
 
-  // nav.addEventListener("click", () => {
-  //   nav.classList.toggle("flex");
-  //   burger.classList.toggle("x")
-  // });
-  function viewdiv(id) {
-    var el = document.getElementById(id);
-    var link = document.getElementById('toggleLink');
-    if (el.style.display == "block") {
-        el.style.display = "none";
-    } else {
-        el.style.display = "block";
-    }
-}
- 
+
+  $( function() {
+    $( '.accordion' ).accordion({
+      collapsible: true,
+      active: 0,
+    });
+     
+    $('.accordions').accordion({
+      heightStyle: 'content',
+      collapsible: true
+    });
+
 
 let searchButton = document.querySelector('.search-button');
 let searchCloseButton = document.querySelector('.search-close-button');
@@ -59,15 +51,15 @@ $(function () {
 
 /* ACCORDION TABS */
 
-document.querySelectorAll('.flag-click').forEach(function (tabsBtn) {
+document.querySelectorAll('.flag-btn').forEach(function (tabsBtn) {
   tabsBtn.addEventListener('click', function (event) {
     let tab = event.currentTarget.dataset.tab;
 
-    document.querySelectorAll('.flag-click').forEach(function (link) {
-      link.classList.remove('flag-click_active');
+    document.querySelectorAll('.flag-btn').forEach(function (link) {
+      link.classList.remove('flag-btn_active');
     });
 
-    tabsBtn.classList.add('flag-click_active');
+    tabsBtn.classList.add('flag-btn_active');
 
     document.querySelectorAll('.language').forEach(function (tabContent) {
       tabContent.classList.remove('language_active');
@@ -325,10 +317,10 @@ var swiper = new Swiper(".project-slide", {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const catalogLangBtn = document.querySelectorAll('.flag-click');
+  const catalogLangBtn = document.querySelectorAll('.flag-btn');
   catalogLangBtn.forEach((btn) => btn.addEventListener('click', () => {
     const selectedLang = btn.dataset.lang;
-    const selectedBtn = document.querySelector('.flag-click.selected');
+    const selectedBtn = document.querySelector('.flag-btn.selected');
     btn.classList.add('selected');
     selectedBtn.classList.remove('selected');
 
@@ -473,5 +465,6 @@ $('select').each(function () {
 
 });
 
-});
-
+  });
+  });
+  
