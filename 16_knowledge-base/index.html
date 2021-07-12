@@ -7,8 +7,8 @@
   <title>Blanchard</title>
   <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
 
 
   <link rel="stylesheet" href="css/style.css">
@@ -16,27 +16,26 @@
   <link rel="stylesheet" href="css/media.css">
   <link rel="stylesheet" href="css/jqueryui.css">
   <link href="css/choices.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
-  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
-  <script defer="" src="//code.jquery.com/jquery-1.12.4.js"></script>
-  <script defer="" src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="css/simplebar.css" />
+  <script src="js/simplebar.min.js"></script>
+  <script defer="" src="js/jquery-1.12.4.js"></script>
+  <script defer="" src="js/jquery-ui.js"></script>
   <script src="js/inputmask.min.js"></script>
   <script src="js/just-validate.min.js"></script>
   <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="js/dist/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/tabs.js"></script>
   <script src="js/burger.js"></script>
 
-  <script src="js/inputmask.min.js"></script>
   <link rel="stylesheet" href="css/styles/choices.min.css" />
   <script src="js/scripts/choices.min.js"></script>
 
-  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/swiper-bundle.js"></script>
+  <!-- <script src="js/swiper-bundle.min.js"></script> -->
+  <script src="js/jquery-1.12.4.js"></script>
+  <script src="js/jquery-ui.js"></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
 
   <script src="js/index.js"></script>
@@ -135,21 +134,106 @@
         <div class="header__menu-bottom menu-bottom">
           <ul class="menu__list_bottom list">
             <li class="bottom-list-item bottom-list-1">
-              <select class="list__item item__bottom">
-                <div data-simplebar class="block">
-                  <option class="item__link link-dropdown" value="hide">Реализм</option>
-                  <option class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</option>
-                  <option class="dropdown-name fridrih" value="FRIDRIH">Фридрих</option>
-                  <option class="dropdown-name leonardo" value="LEONARDO">Леонардо</option>
-                  <option class="dropdown-name verokio" value="VEROKIO">Верроккьо</option>
-                  <option class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</option>
-                  <option class="dropdown-name fridrih" value="FRIDRIH">Фридрих</option>
-                  <option class="dropdown-name leonardo" value="LEONARDO">Леонардо</option>
-                  <option class="dropdown-name verokio" value="VEROKIO">Верроккьо</option>
-                </div>
-              </select>
+              <button class="item__link link-dropdown item__link-realizm">
+                <span>Реализм</span>
+                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 1L6 6L0.999998 1" stroke="white"/>
+                  </svg>
+              </button>
+              <div class="simplebar-block simplebar-block-realizm">
+                <ul data-simplebar class="simplebar__list">
+                  <li class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</li>
+                  <li class="dropdown-name fridrih" value="FRIDRIH">Фридрих</li>
+                  <li class="dropdown-name leonardo" value="LEONARDO">Леонардо</li>
+                  <li class="dropdown-name verokio" value="VEROKIO">Верроккьо</li>
+                  <li class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</li>
+                  <li class="dropdown-name fridrih" value="FRIDRIH">Фридрих</li>
+                  <li class="dropdown-name leonardo" value="LEONARDO">Леонардо</li>
+                  <li class="dropdown-name verokio" value="VEROKIO">Верроккьо</li>
+                </ul>
+              </div>
             </li>
             <li class="bottom-list-item bottom-list-2">
+              <button class="item__link link-dropdown item__link-impressionizm">
+                <span>Импрессионизм</span>
+                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 1L6 6L0.999998 1" stroke="white"/>
+                  </svg>
+              </button>
+              <div class="simplebar-block simplebar-block-impressionizm">
+                <ul data-simplebar class="simplebar__list">
+                  <li class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</li>
+                  <li class="dropdown-name fridrih" value="FRIDRIH">Фридрих</li>
+                  <li class="dropdown-name leonardo" value="LEONARDO">Леонардо</li>
+                  <li class="dropdown-name verokio" value="VEROKIO">Верроккьо</li>
+                  <li class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</li>
+                  <li class="dropdown-name fridrih" value="FRIDRIH">Фридрих</li>
+                  <li class="dropdown-name leonardo" value="LEONARDO">Леонардо</li>
+                  <li class="dropdown-name verokio" value="VEROKIO">Верроккьо</li>
+                </ul>
+              </div>
+            </li>
+            <li class="bottom-list-item bottom-list-3">
+              <button class="item__link link-dropdown item__link-postimpressionizm">
+                <span>Постимпрессионизм</span>
+                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 1L6 6L0.999998 1" stroke="white"/>
+                  </svg>
+              </button>
+              <div class="simplebar-block simplebar-block-postimpressionizm">
+                <ul data-simplebar class="simplebar__list">
+                  <li class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</li>
+                  <li class="dropdown-name fridrih" value="FRIDRIH">Фридрих</li>
+                  <li class="dropdown-name leonardo" value="LEONARDO">Леонардо</li>
+                  <li class="dropdown-name verokio" value="VEROKIO">Верроккьо</li>
+                  <li class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</li>
+                  <li class="dropdown-name fridrih" value="FRIDRIH">Фридрих</li>
+                  <li class="dropdown-name leonardo" value="LEONARDO">Леонардо</li>
+                  <li class="dropdown-name verokio" value="VEROKIO">Верроккьо</li>
+                </ul>
+              </div>
+            </li>
+            <li class="bottom-list-item bottom-list-4">
+              <button class="item__link link-dropdown item__link-avangard">
+                <span>Авангард</span>
+                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 1L6 6L0.999998 1" stroke="white"/>
+                  </svg>
+              </button>
+              <div class="simplebar-block simplebar-block-avangard">
+                <ul data-simplebar class="simplebar__list">
+                  <li class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</li>
+                  <li class="dropdown-name fridrih" value="FRIDRIH">Фридрих</li>
+                  <li class="dropdown-name leonardo" value="LEONARDO">Леонардо</li>
+                  <li class="dropdown-name verokio" value="VEROKIO">Верроккьо</li>
+                  <li class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</li>
+                  <li class="dropdown-name fridrih" value="FRIDRIH">Фридрих</li>
+                  <li class="dropdown-name leonardo" value="LEONARDO">Леонардо</li>
+                  <li class="dropdown-name verokio" value="VEROKIO">Верроккьо</li>
+                </ul>
+              </div>
+            </li>
+            <li class="bottom-list-item bottom-list-5">
+              <button class="item__link link-dropdown item__link-futurizm">
+                <span>Футуризм</span>
+                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11 1L6 6L0.999998 1" stroke="white"/>
+                  </svg>
+              </button>
+              <div class="simplebar-block simplebar-block-futurizm">
+                <ul data-simplebar class="simplebar__list">
+                  <li class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</li>
+                  <li class="dropdown-name fridrih" value="FRIDRIH">Фридрих</li>
+                  <li class="dropdown-name leonardo" value="LEONARDO">Леонардо</li>
+                  <li class="dropdown-name verokio" value="VEROKIO">Верроккьо</li>
+                  <li class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</li>
+                  <li class="dropdown-name fridrih" value="FRIDRIH">Фридрих</li>
+                  <li class="dropdown-name leonardo" value="LEONARDO">Леонардо</li>
+                  <li class="dropdown-name verokio" value="VEROKIO">Верроккьо</li>
+                </ul>
+              </div>
+            </li>
+            <!-- <li class="bottom-list-item bottom-list-2">
               <select class="list__item item__bottom">
                 <option class="item__link link-dropdown" value="hide">Импрессионизм</option>
                 <option class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</option>
@@ -200,7 +284,7 @@
                 <option class="dropdown-name leonardo" value="LEONARDO">Леонардо</option>
                 <option class="dropdown-name verokio" value="VEROKIO">Верроккьо</option>
               </select>
-            </li>
+            </li> -->
           </ul>
         </div>
 
@@ -226,7 +310,8 @@
   <main>
     <section class="hero">
       <div class="container hero-container">
-        <h1 class="title section-first__title">Прикоснитесь <br class="br-first-tittle"> к прекрасному</h1>
+        <h1 class="main-title">Blanchard - художественная галерея</h1>
+        <h2 class="title section-first__title">Прикоснитесь <br class="br-first-tittle"> к прекрасному</h2>
         <p class="section-first__paragraph">Мы вынуждены отталкиваться от того, что реализация намеченных плановых
           заданий создаёт предпосылки для новых <br class="br-first-paragraph"> предложений.</p>
         <button class="section-first__btn-mailing btn-effects" type="button">Подписаться на рассылку</button>
@@ -239,8 +324,7 @@
     </section>
     <section class="about-us" id="about-us">
       <div class="container about-container">
-        <h2 class="heading-about">
-
+        <h2 class="title about-title">
           О нас
         </h2>
         <p class="text-about">

@@ -8,8 +8,7 @@ document.addEventListener('DOMContentLoader', function () {
       document.querySelector(`[data-target="${path}"]`).classList.add('.catalog-left-block-active')
     })
   })
-})
-
+});
 
 
 
