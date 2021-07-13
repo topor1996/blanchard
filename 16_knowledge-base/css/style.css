@@ -430,7 +430,7 @@ h3 {
   transition: transform .5s ease;
 }
 
-.item__link:focus:not(:active), .item__link:focus:not(:hover) {
+.item__link:focus:not(:active), .item__link:focus:not(:hover)  {
   background: #7943A4;
 }
 
