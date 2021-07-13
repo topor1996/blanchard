@@ -443,55 +443,55 @@ h3 {
 }
 
 .tintoretto {
-  background-image: url('/img/Tintoretto.png');
+  background-image: url('../img/Tintoretto.png');
   background-position: center center;
   background-repeat: no-repeat;
   padding: 10px;
 }
 
 .tintoretto:active {
-  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/Tintoretto.png');
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('.../img/Tintoretto.png');
   border: 2px solid #D1A9F0;
 }
 
 .fridrih {
-  background-image: url('/img/Fridrih.png');
+  background-image: url('../img/Fridrih.png');
   background-position: center center;
   background-repeat: no-repeat;
   padding: 10px;
 }
 
 .fridrih:active {
-  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/Fridrih.png');
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('../img/Fridrih.png');
   border: 2px solid #D1A9F0;
 }
 
 .leonardo {
-  background-image: url('/img/Leonardo.png');
+  background-image: url('../img/Leonardo.png');
   background-position: center center;
   background-repeat: no-repeat;
   padding: 10px;
 }
 
 .leonardo:active {
-  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/Leonardo.png');
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('../img/Leonardo.png');
   border: 2px solid #D1A9F0;
 }
 
 .verokio {
-  background-image: url('/img/Verokio.png');
+  background-image: url('../img/Verokio.png');
   background-position: center center;
   background-repeat: no-repeat;
   padding: 10px;
 }
 
 .verokio:active {
-  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('/img/Verokio.png');
+  background: linear-gradient(0deg, rgba(194, 131, 243, 0.4), rgba(194, 131, 243, 0.4)), url('../img/Verokio.png');
   border: 2px solid #D1A9F0;
 }
 
 .link-dropdown::after {
-  background-image: url('/img/strelka.svg');
+  background-image: url('../img/strelka.svg');
   background-position: center;
   background-repeat: no-repeat;
 }
