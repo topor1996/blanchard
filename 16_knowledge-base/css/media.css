@@ -1664,8 +1664,8 @@
     height: auto !important;
   }
   .catalog-right-child {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    /* flex-direction: column; */
   }
   .img-left-catalog {
     margin-bottom: 17px;
