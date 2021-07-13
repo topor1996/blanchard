@@ -1604,31 +1604,31 @@ h3 {
 }
 
 .france {
-  background-image: url('/img/im4.png');
+  background-image: url('../img/im4.png');
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .germany {
-  background-image: url('/img/im6.png');
+  background-image: url('../img/im6.png');
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .italy {
-  background-image: url('/img/im7.png');
+  background-image: url('../img/im7.png');
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .russia {
-  background-image: url('/img/im8.png');
+  background-image: url('../img/im8.png');
   background-repeat: no-repeat;
   background-position: center center;
 }
 
 .belgia {
-  background-image: url('/img/im5.png');
+  background-image: url('../img/im5.png');
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -1649,7 +1649,7 @@ h3 {
 
 .flag-btn:active {
   border: 2px solid #7943A4;
-  border-radius: 23px;
+  border-radius: 50px;
   transition: border .5s ease;
 }
 
