@@ -389,8 +389,6 @@ h3 {
   z-index: 1;
 }
 
-
-
 .show {
   display: block;
 }
@@ -432,6 +430,14 @@ h3 {
 
 .item__link:focus:not(:active), .item__link:focus:not(:hover)  {
   background: #7943A4;
+}
+
+.item__link:active:focus {
+  background: none;
+}
+
+.item__link:hover:focus {
+  background: none;
 }
 
 .item__link:hover {
