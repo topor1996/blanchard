@@ -1708,7 +1708,7 @@ h3 {
 
 .accordions .ui-accordion-header-icon {
   content: '';
-  background-image: url('/img/strelka2.svg') !important;
+  background-image: url('../img/strelka2.svg') !important;
   background-position: center center;
   background-repeat: no-repeat;
   width: 100%;
