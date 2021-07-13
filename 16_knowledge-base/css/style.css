@@ -367,6 +367,36 @@ h3 {
   transition: all .5s ease;
 }
 
+/* DROPDOWN */
+
+.dropbtn {
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+
+.show {
+  display: block;
+}
+
+/* END DROPDOWN */
+
 .header-bottom__form:focus:not(:active) .header-bottom__search, .header-bottom__form:focus:not(:hover) .header-bottom__search {
   border-color: #C283F3;
 }

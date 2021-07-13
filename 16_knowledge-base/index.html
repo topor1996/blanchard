@@ -9,14 +9,18 @@
 
   <link rel="stylesheet" href="css/swiper-bundle.css" />
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-
-
+  <!-- Bootstrap CSS (jsDelivr CDN) -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
+  <script defer src="js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/media.css">
   <link rel="stylesheet" href="css/jqueryui.css">
   <link href="css/choices.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/simplebar.css" />
+  <script src="js/simplebar.js"></script>
   <script src="js/simplebar.min.js"></script>
   <script defer="" src="js/jquery-1.12.4.js"></script>
   <script defer="" src="js/jquery-ui.js"></script>
@@ -133,14 +137,14 @@
         <!-- <div class="bottom_flex"> -->
         <div class="header__menu-bottom menu-bottom">
           <ul class="menu__list_bottom list">
-            <li class="bottom-list-item bottom-list-1">
-              <button class="item__link link-dropdown item__link-realizm">
+            <li class="dropdown bottom-list-item bottom-list-1">
+              <button onclick="myFunction(this)" class="dropbtn item__link link-dropdown item__link-realizm">
                 <span>Реализм</span>
                 <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11 1L6 6L0.999998 1" stroke="white"/>
                   </svg>
               </button>
-              <div class="simplebar-block simplebar-block-realizm">
+              <div  class="dropdown-content simplebar-block simplebar-block-realizm">
                 <ul data-simplebar class="simplebar__list">
                   <li class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</li>
                   <li class="dropdown-name fridrih" value="FRIDRIH">Фридрих</li>
@@ -153,14 +157,14 @@
                 </ul>
               </div>
             </li>
-            <li class="bottom-list-item bottom-list-2">
-              <button class="item__link link-dropdown item__link-impressionizm">
+            <li class="dropdown bottom-list-item bottom-list-1">
+              <button onclick="myFunction(this)" class="dropbtn item__link link-dropdown item__link-impresionizm">
                 <span>Импрессионизм</span>
                 <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11 1L6 6L0.999998 1" stroke="white"/>
                   </svg>
               </button>
-              <div class="simplebar-block simplebar-block-impressionizm">
+              <div  class="dropdown-content simplebar-block simplebar-block-realizm">
                 <ul data-simplebar class="simplebar__list">
                   <li class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</li>
                   <li class="dropdown-name fridrih" value="FRIDRIH">Фридрих</li>
@@ -173,14 +177,14 @@
                 </ul>
               </div>
             </li>
-            <li class="bottom-list-item bottom-list-3">
-              <button class="item__link link-dropdown item__link-postimpressionizm">
+            <li class="dropdown bottom-list-item bottom-list-1">
+              <button onclick="myFunction(this)" class="dropbtn item__link link-dropdown item__link-postimpresionizm">
                 <span>Постимпрессионизм</span>
                 <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11 1L6 6L0.999998 1" stroke="white"/>
                   </svg>
               </button>
-              <div class="simplebar-block simplebar-block-postimpressionizm">
+              <div  class="dropdown-content simplebar-block simplebar-block-realizm">
                 <ul data-simplebar class="simplebar__list">
                   <li class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</li>
                   <li class="dropdown-name fridrih" value="FRIDRIH">Фридрих</li>
@@ -193,14 +197,14 @@
                 </ul>
               </div>
             </li>
-            <li class="bottom-list-item bottom-list-4">
-              <button class="item__link link-dropdown item__link-avangard">
+            <li class="dropdown bottom-list-item bottom-list-1">
+              <button onclick="myFunction(this)" class="dropbtn item__link link-dropdown item__link-avangard">
                 <span>Авангард</span>
                 <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11 1L6 6L0.999998 1" stroke="white"/>
                   </svg>
               </button>
-              <div class="simplebar-block simplebar-block-avangard">
+              <div  class="dropdown-content simplebar-block simplebar-block-realizm">
                 <ul data-simplebar class="simplebar__list">
                   <li class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</li>
                   <li class="dropdown-name fridrih" value="FRIDRIH">Фридрих</li>
@@ -213,14 +217,14 @@
                 </ul>
               </div>
             </li>
-            <li class="bottom-list-item bottom-list-5">
-              <button class="item__link link-dropdown item__link-futurizm">
+            <li class="dropdown bottom-list-item bottom-list-1">
+              <button onclick="myFunction(this)" class="dropbtn item__link link-dropdown item__link-futurizm">
                 <span>Футуризм</span>
                 <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11 1L6 6L0.999998 1" stroke="white"/>
                   </svg>
               </button>
-              <div class="simplebar-block simplebar-block-futurizm">
+              <div  class="dropdown-content simplebar-block simplebar-block-realizm">
                 <ul data-simplebar class="simplebar__list">
                   <li class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</li>
                   <li class="dropdown-name fridrih" value="FRIDRIH">Фридрих</li>

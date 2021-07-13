@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', function () {
       collapsible: true,
       active: 0,
     });
-     
+
     $('.accordions').accordion({
       heightStyle: 'content',
       collapsible: true
@@ -49,9 +49,99 @@ $(function () {
 });
 /* END ACCORDION */
 
+// document.querySelectorAll('.item__link').forEach(function (tabsBtn) {
+//   tabsBtn.addEventListener('click', function (event) {
+//     let tab = event.currentTarget.dataset.tab;
+
+//     document.querySelectorAll('.item__link').forEach(function (link) {
+//       link.classList.remove('item__link-active');
+//     });
+
+//     tabsBtn.classList.add('item__link-active');
+
+//   });
+// });
+
+document.addEventListener('DOMContentLoader', function () {
+  document.querySelectorAll('.item__link-realizm').forEach(function (tabsBtn) {
+    tabsBtn.addEventListener('click', function (event) {
+      const path = event.currentTarget.dataset.path
+      document.querySelectorAll ('.item__link-realizm').forEach(function(tabContent){
+        tabContent.classList.remove('item__link-active')
+      })
+      document.querySelector(`[data-target="${path}"]`).classList.add('item__link-active')
+    })
+  })
+});
+
+document.addEventListener('DOMContentLoader', function () {
+  document.querySelectorAll('.item__link-impresionizm').forEach(function (tabsBtn) {
+    tabsBtn.addEventListener('click', function (event) {
+      const path = event.currentTarget.dataset.path
+      document.querySelectorAll ('.item__link-impresionizm').forEach(function(tabContent){
+        tabContent.classList.remove('item__link-active')
+      })
+      document.querySelector(`[data-target="${path}"]`).classList.add('item__link-active')
+    })
+  })
+});
+
+document.addEventListener('DOMContentLoader', function () {
+  document.querySelectorAll('.item__link-postimpresionizm').forEach(function (tabsBtn) {
+    tabsBtn.addEventListener('click', function (event) {
+      const path = event.currentTarget.dataset.path
+      document.querySelectorAll ('.item__link-postimpresionizm').forEach(function(tabContent){
+        tabContent.classList.remove('item__link-active')
+      })
+      document.querySelector(`[data-target="${path}"]`).classList.add('item__link-active')
+    })
+  })
+});
+
+document.addEventListener('DOMContentLoader', function () {
+  document.querySelectorAll('.item__link-avangard').forEach(function (tabsBtn) {
+    tabsBtn.addEventListener('click', function (event) {
+      const path = event.currentTarget.dataset.path
+      document.querySelectorAll ('.item__link-avangard').forEach(function(tabContent){
+        tabContent.classList.remove('item__link-active')
+      })
+      document.querySelector(`[data-target="${path}"]`).classList.add('item__link-active')
+    })
+  })
+});
+
+document.addEventListener('DOMContentLoader', function () {
+  document.querySelectorAll('.item__link-futurizm').forEach(function (tabsBtn) {
+    tabsBtn.addEventListener('click', function (event) {
+      const path = event.currentTarget.dataset.path
+      document.querySelectorAll ('.item__link-futurizm').forEach(function(tabContent){
+        tabContent.classList.remove('item__link-active')
+      })
+      document.querySelector(`[data-target="${path}"]`).classList.add('item__link-active')
+    })
+  })
+});
+
+
 
 /* ACCORDION TABS */
 
+document.querySelectorAll('.flag-btn').forEach(function (tabsBtn) {
+  tabsBtn.addEventListener('click', function (event) {
+    let tab = event.currentTarget.dataset.tab;
+
+    document.querySelectorAll('.flag-btn').forEach(function (link) {
+      link.classList.remove('flag-btn_active');
+    });
+
+    tabsBtn.classList.add('flag-btn_active');
+
+    document.querySelectorAll('.language').forEach(function (tabContent) {
+      tabContent.classList.remove('language_active');
+    });
+    document.querySelector(`[data-content="${tab}"]`).classList.add('language_active');
+  });
+});
 
 /* ACCODRION */
 $(function () {
