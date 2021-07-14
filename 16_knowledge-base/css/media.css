@@ -771,7 +771,7 @@
   .item__nav__list {
     display: flex;
     flex-direction: column;
-    margin-bottom: 100px;
+margin: 0;
   }
   .header-btn {
     width: max-content;
@@ -783,6 +783,7 @@
     color: #FFFFFF;
     text-decoration: none;
     position: relative;
+    margin-top: 100px;
   }
   .header-btn:focus.header-btn::after {
     content: "";

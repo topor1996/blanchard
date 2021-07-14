@@ -10,9 +10,12 @@
   <link rel="stylesheet" href="css/swiper-bundle.css" />
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <!-- Bootstrap CSS (jsDelivr CDN) -->
-  <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <link href="css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
   <!-- Bootstrap Bundle JS (jsDelivr CDN) -->
-  <script defer src="js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  <script defer src="js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
@@ -31,6 +34,7 @@
   <script src="js/jquery-ui.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/tabs.js"></script>
+  <script src="js/filter.js"></script>
   <script src="js/burger.js"></script>
 
   <link rel="stylesheet" href="css/styles/choices.min.css" />
@@ -60,26 +64,26 @@
         </button>
         <div class="header-burger-menu">
           <nav class="header__nav header__menu">
-            <ul id="Dropdown" class="header-nav__list item__nav__list list">
-              <li class="list__item item__top header-nav__item">
+            <ul id="Dropdown" class="header-nav__list item__nav__list">
+              <li class="list__item header-nav__item">
                 <a class="list__link" href="#about-us">О нас</a>
               </li>
-              <li class="list__item item__top header-nav__item">
+              <li class="list__item header-nav__item">
                 <a class="list__link" href="#gallery">Галерея</a>
               </li>
-              <li class="list__item item__top header-nav__item">
+              <li class="list__item header-nav__item">
                 <a class="list__link" href="#catalog">Каталог</a>
               </li>
-              <li class="list__item item__top header-nav__item">
+              <li class="list__item header-nav__item">
                 <a class="list__link" href="#events">События</a>
               </li>
-              <li class="list__item item__top header-nav__item">
+              <li class="list__item header-nav__item">
                 <a class="list__link" href="#publishing">Издания</a>
               </li>
-              <li class="list__item item__top header-nav__item">
+              <li class="list__item header-nav__item">
                 <a class="list__link" href="#project">Проекты</a>
               </li>
-              <li class="list__item item__top header-nav__item">
+              <li class="list__item header-nav__item">
                 <a class="list__link" href="#contacts">Контакты</a>
               </li>
             </ul>
@@ -141,19 +145,25 @@
               <button onclick="myFunction(this)" class="dropbtn item__link link-dropdown item__link-realizm">
                 <span>Реализм</span>
                 <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 1L6 6L0.999998 1" stroke="white"/>
-                  </svg>
+                  <path d="M11 1L6 6L0.999998 1" stroke="white" />
+                </svg>
               </button>
-              <div  class="dropdown-content simplebar-block simplebar-block-realizm">
+              <div class="dropdown-content simplebar-block simplebar-block-realizm">
                 <ul data-simplebar class="simplebar__list">
-                  <li class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</li>
-                  <li class="dropdown-name fridrih" value="FRIDRIH">Фридрих</li>
-                  <li class="dropdown-name leonardo" value="LEONARDO">Леонардо</li>
-                  <li class="dropdown-name verokio" value="VEROKIO">Верроккьо</li>
-                  <li class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</li>
-                  <li class="dropdown-name fridrih" value="FRIDRIH">Фридрих</li>
-                  <li class="dropdown-name leonardo" value="LEONARDO">Леонардо</li>
-                  <li class="dropdown-name verokio" value="VEROKIO">Верроккьо</li>
+                  <li class="dropdown-name " value="TINTORETTO" rel="icon-temperature"><a href=""
+                      class="dropdown-actor tintoretto">Тинторетто</a></li>
+                  <li class="dropdown-name " value="FRIDRIH"><a href="" class="dropdown-actor fridrih">Фридрих</a></li>
+                  <li class="dropdown-name " value="LEONARDO"><a href="" class="dropdown-actor leonardo">Леонардо</a>
+                  </li>
+                  <li class="dropdown-name " value="VEROKIO"><a href="" class="dropdown-actor verokio">Верроккьо</a>
+                  </li>
+                  <li class="dropdown-name " value="TINTORETTO" rel="icon-temperature"><a href=""
+                      class="dropdown-actor tintoretto">Тинторетто</a> </li>
+                  <li class="dropdown-name " value="FRIDRIH"><a href="" class="dropdown-actor fridrih">Фридрих</a></li>
+                  <li class="dropdown-name " value="LEONARDO"><a href="" class="dropdown-actor leonardo">Леонардо</a>
+                  </li>
+                  <li class="dropdown-name " value="VEROKIO"><a href="" class="dropdown-actor verokio">Верроккьо</a>
+                  </li>
                 </ul>
               </div>
             </li>
@@ -161,19 +171,25 @@
               <button onclick="myFunction(this)" class="dropbtn item__link link-dropdown item__link-impresionizm">
                 <span>Импрессионизм</span>
                 <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 1L6 6L0.999998 1" stroke="white"/>
-                  </svg>
+                  <path d="M11 1L6 6L0.999998 1" stroke="white" />
+                </svg>
               </button>
-              <div  class="dropdown-content simplebar-block simplebar-block-realizm">
+              <div class="dropdown-content simplebar-block simplebar-block-realizm">
                 <ul data-simplebar class="simplebar__list">
-                  <li class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</li>
-                  <li class="dropdown-name fridrih" value="FRIDRIH">Фридрих</li>
-                  <li class="dropdown-name leonardo" value="LEONARDO">Леонардо</li>
-                  <li class="dropdown-name verokio" value="VEROKIO">Верроккьо</li>
-                  <li class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</li>
-                  <li class="dropdown-name fridrih" value="FRIDRIH">Фридрих</li>
-                  <li class="dropdown-name leonardo" value="LEONARDO">Леонардо</li>
-                  <li class="dropdown-name verokio" value="VEROKIO">Верроккьо</li>
+                  <li class="dropdown-name " value="TINTORETTO" rel="icon-temperature"><a href=""
+                      class="dropdown-actor tintoretto">Тинторетто</a></li>
+                  <li class="dropdown-name " value="FRIDRIH"><a href="" class="dropdown-actor fridrih">Фридрих</a></li>
+                  <li class="dropdown-name " value="LEONARDO"><a href="" class="dropdown-actor leonardo">Леонардо</a>
+                  </li>
+                  <li class="dropdown-name " value="VEROKIO"><a href="" class="dropdown-actor verokio">Верроккьо</a>
+                  </li>
+                  <li class="dropdown-name " value="TINTORETTO" rel="icon-temperature"><a href=""
+                      class="dropdown-actor tintoretto">Тинторетто</a> </li>
+                  <li class="dropdown-name " value="FRIDRIH"><a href="" class="dropdown-actor fridrih">Фридрих</a></li>
+                  <li class="dropdown-name " value="LEONARDO"><a href="" class="dropdown-actor leonardo">Леонардо</a>
+                  </li>
+                  <li class="dropdown-name " value="VEROKIO"><a href="" class="dropdown-actor verokio">Верроккьо</a>
+                  </li>
                 </ul>
               </div>
             </li>
@@ -181,19 +197,25 @@
               <button onclick="myFunction(this)" class="dropbtn item__link link-dropdown item__link-postimpresionizm">
                 <span>Постимпрессионизм</span>
                 <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 1L6 6L0.999998 1" stroke="white"/>
-                  </svg>
+                  <path d="M11 1L6 6L0.999998 1" stroke="white" />
+                </svg>
               </button>
-              <div  class="dropdown-content simplebar-block simplebar-block-realizm">
+              <div class="dropdown-content simplebar-block simplebar-block-realizm">
                 <ul data-simplebar class="simplebar__list">
-                  <li class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</li>
-                  <li class="dropdown-name fridrih" value="FRIDRIH">Фридрих</li>
-                  <li class="dropdown-name leonardo" value="LEONARDO">Леонардо</li>
-                  <li class="dropdown-name verokio" value="VEROKIO">Верроккьо</li>
-                  <li class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</li>
-                  <li class="dropdown-name fridrih" value="FRIDRIH">Фридрих</li>
-                  <li class="dropdown-name leonardo" value="LEONARDO">Леонардо</li>
-                  <li class="dropdown-name verokio" value="VEROKIO">Верроккьо</li>
+                  <li class="dropdown-name " value="TINTORETTO" rel="icon-temperature"><a href=""
+                      class="dropdown-actor tintoretto">Тинторетто</a></li>
+                  <li class="dropdown-name " value="FRIDRIH"><a href="" class="dropdown-actor fridrih">Фридрих</a></li>
+                  <li class="dropdown-name " value="LEONARDO"><a href="" class="dropdown-actor leonardo">Леонардо</a>
+                  </li>
+                  <li class="dropdown-name " value="VEROKIO"><a href="" class="dropdown-actor verokio">Верроккьо</a>
+                  </li>
+                  <li class="dropdown-name " value="TINTORETTO" rel="icon-temperature"><a href=""
+                      class="dropdown-actor tintoretto">Тинторетто</a> </li>
+                  <li class="dropdown-name " value="FRIDRIH"><a href="" class="dropdown-actor fridrih">Фридрих</a></li>
+                  <li class="dropdown-name " value="LEONARDO"><a href="" class="dropdown-actor leonardo">Леонардо</a>
+                  </li>
+                  <li class="dropdown-name " value="VEROKIO"><a href="" class="dropdown-actor verokio">Верроккьо</a>
+                  </li>
                 </ul>
               </div>
             </li>
@@ -201,19 +223,25 @@
               <button onclick="myFunction(this)" class="dropbtn item__link link-dropdown item__link-avangard">
                 <span>Авангард</span>
                 <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 1L6 6L0.999998 1" stroke="white"/>
-                  </svg>
+                  <path d="M11 1L6 6L0.999998 1" stroke="white" />
+                </svg>
               </button>
-              <div  class="dropdown-content simplebar-block simplebar-block-realizm">
+              <div class="dropdown-content simplebar-block simplebar-block-realizm">
                 <ul data-simplebar class="simplebar__list">
-                  <li class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</li>
-                  <li class="dropdown-name fridrih" value="FRIDRIH">Фридрих</li>
-                  <li class="dropdown-name leonardo" value="LEONARDO">Леонардо</li>
-                  <li class="dropdown-name verokio" value="VEROKIO">Верроккьо</li>
-                  <li class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</li>
-                  <li class="dropdown-name fridrih" value="FRIDRIH">Фридрих</li>
-                  <li class="dropdown-name leonardo" value="LEONARDO">Леонардо</li>
-                  <li class="dropdown-name verokio" value="VEROKIO">Верроккьо</li>
+                  <li class="dropdown-name " value="TINTORETTO" rel="icon-temperature"><a href=""
+                      class="dropdown-actor tintoretto">Тинторетто</a></li>
+                  <li class="dropdown-name " value="FRIDRIH"><a href="" class="dropdown-actor fridrih">Фридрих</a></li>
+                  <li class="dropdown-name " value="LEONARDO"><a href="" class="dropdown-actor leonardo">Леонардо</a>
+                  </li>
+                  <li class="dropdown-name " value="VEROKIO"><a href="" class="dropdown-actor verokio">Верроккьо</a>
+                  </li>
+                  <li class="dropdown-name " value="TINTORETTO" rel="icon-temperature"><a href=""
+                      class="dropdown-actor tintoretto">Тинторетто</a> </li>
+                  <li class="dropdown-name " value="FRIDRIH"><a href="" class="dropdown-actor fridrih">Фридрих</a></li>
+                  <li class="dropdown-name " value="LEONARDO"><a href="" class="dropdown-actor leonardo">Леонардо</a>
+                  </li>
+                  <li class="dropdown-name " value="VEROKIO"><a href="" class="dropdown-actor verokio">Верроккьо</a>
+                  </li>
                 </ul>
               </div>
             </li>
@@ -221,19 +249,25 @@
               <button onclick="myFunction(this)" class="dropbtn item__link link-dropdown item__link-futurizm">
                 <span>Футуризм</span>
                 <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 1L6 6L0.999998 1" stroke="white"/>
-                  </svg>
+                  <path d="M11 1L6 6L0.999998 1" stroke="white" />
+                </svg>
               </button>
-              <div  class="dropdown-content simplebar-block simplebar-block-realizm">
+              <div class="dropdown-content simplebar-block simplebar-block-realizm">
                 <ul data-simplebar class="simplebar__list">
-                  <li class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</li>
-                  <li class="dropdown-name fridrih" value="FRIDRIH">Фридрих</li>
-                  <li class="dropdown-name leonardo" value="LEONARDO">Леонардо</li>
-                  <li class="dropdown-name verokio" value="VEROKIO">Верроккьо</li>
-                  <li class="dropdown-name tintoretto" value="TINTORETTO" rel="icon-temperature">Тинторетто</li>
-                  <li class="dropdown-name fridrih" value="FRIDRIH">Фридрих</li>
-                  <li class="dropdown-name leonardo" value="LEONARDO">Леонардо</li>
-                  <li class="dropdown-name verokio" value="VEROKIO">Верроккьо</li>
+                  <li class="dropdown-name " value="TINTORETTO" rel="icon-temperature"><a href=""
+                      class="dropdown-actor tintoretto">Тинторетто</a></li>
+                  <li class="dropdown-name " value="FRIDRIH"><a href="" class="dropdown-actor fridrih">Фридрих</a></li>
+                  <li class="dropdown-name " value="LEONARDO"><a href="" class="dropdown-actor leonardo">Леонардо</a>
+                  </li>
+                  <li class="dropdown-name " value="VEROKIO"><a href="" class="dropdown-actor verokio">Верроккьо</a>
+                  </li>
+                  <li class="dropdown-name " value="TINTORETTO" rel="icon-temperature"><a href=""
+                      class="dropdown-actor tintoretto">Тинторетто</a> </li>
+                  <li class="dropdown-name " value="FRIDRIH"><a href="" class="dropdown-actor fridrih">Фридрих</a></li>
+                  <li class="dropdown-name " value="LEONARDO"><a href="" class="dropdown-actor leonardo">Леонардо</a>
+                  </li>
+                  <li class="dropdown-name " value="VEROKIO"><a href="" class="dropdown-actor verokio">Верроккьо</a>
+                  </li>
                 </ul>
               </div>
             </li>
@@ -351,11 +385,20 @@
               Галерея
             </h2>
             <span class="gallery-filter-row">Фильтровать по:</span>
-            <div class="block selectum">
-              <select class="select js-choice" name="select" id="selectCustom">
-                <option value="">Автор</option>
-                <option value="Направление">Направление</option>
-                <option value="Техника">Техника</option>
+            <div class="filter gallery__filter">
+              <svg class="filter__icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1L6 6L0.999998 1" stroke="white"/>
+                </svg>
+              <select class="filter__select" id="gallery__filter" name="gallery__filter">
+                <option class="filter__option" value="Автор">
+                  Автор
+                </option>
+                <option class="filter__option" value="Направление">
+                  Направление
+                </option>
+                <option class="filter__option" value="Техника">
+                  Техника
+                </option>
               </select>
             </div>
           </div>
@@ -451,13 +494,13 @@
           <h2 class="catalog-tittle">
             Каталог
           </h2>
-          <div class="flag">
-            <button class="flag-btn france" data-tab="four"></button>
-            <button class="flag-btn germany" data-tab="four"></button>
-            <button class="flag-btn italy" data-tab="four"></button>
-            <button class="flag-btn flag-btn_active russia" data-tab="five"></button>
-            <button class="flag-btn belgia" data-tab="four"></button>
-          </div>
+          <ul class="flag flag-list">
+           <li class="flag-item"><button class="flag-btn france" data-tab="four"></button></li>
+            <li class="flag-item"><button class="flag-btn germany" data-tab="four"></button></li>
+            <li class="flag-item"><button class="flag-btn italy" data-tab="four"></button></li>
+            <li class="flag-item"><button class="flag-btn flag-btn_active russia" data-tab="five"></button></li>
+            <li class="flag-item"><button class="flag-btn belgia" data-tab="four"></button></li>
+          </ul>
         </div>
 
         <div class="language language_active english" data-content="five">
@@ -505,54 +548,54 @@
                 </div>
                 <div class="open-accordion-list">
                   <ul class="catalog-right-child catalog-firsth-child">
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Бенедетто
-                        ди Биндо</a> </li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
-                        href="#lorem">Бергоньоне, Амброджо</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Биссоло,
-                        Франческо</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
-                        href="#lorem">Больтраффио, Джованни</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
-                        href="#lorem">Бонсиньори, Франческо</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Боттичини,
-                        Рафаэлло</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
-                        href="#lorem">Брамантино</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Бреа,
-                        Людовико</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Бьяджо
-                        д’Антонио Туччи</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
-                        href="#lorem">Веккьетта</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Андреа
-                        Верроккьо</a></li>
-                    <li class="artist artist_active" data-path="one" data-tab="one"><a class="artist__item"
-                        href="#Girlandao">Доменико Гирландайо</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Беноццо
-                        Гоццоли</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Граначчи,
-                        Франческо</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Грегорио
-                        ди Чекко</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Джованни
-                        да Удине</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Джованни
-                        ди Паоло</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
-                        href="#lorem">Джорджоне</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Парентино,
-                        Бернардо</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
-                        href="#lorem">Пезеллино</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Пьетро
-                        Перуджино</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item" href="#lorem">Перуцци,
-                        Бальдассаре</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
-                        href="#lorem">Пизанелло</a></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><a class="artist__item"
-                        href="#lorem">Пинтуриккьо</a></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Бенедетто
+                        ди Биндо</button> </li>
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
+                        href="#lorem">Бергоньоне, Амброджо</button></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Биссоло,
+                        Франческо</button></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
+                        href="#lorem">Больтраффио, Джованни</button></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
+                        href="#lorem">Бонсиньори, Франческо</button></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Боттичини,
+                        Рафаэлло</button></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
+                        href="#lorem">Брамантино</button></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Бреа,
+                        Людовико</button></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Бьяджо
+                        д’Антонио Туччи</button></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
+                        href="#lorem">Веккьетта</button></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Андреа
+                        Верроккьо</button></li>
+                    <li class="artist artist_active" data-path="one" data-tab="one"><button class="artist__item"
+                        href="#Girlandao">Доменико Гирландайо</button></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Беноццо
+                        Гоццоли</button></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Граначчи,
+                        Франческо</button></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Грегорио
+                        ди Чекко</button></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Джованни
+                        да Удине</button></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Джованни
+                        ди Паоло</button></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
+                        href="#lorem">Джорджоне</button></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Парентино,
+                        Бернардо</button></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
+                        href="#lorem">Пезеллино</button></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Пьетро
+                        Перуджино</button></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Перуцци,
+                        Бальдассаре</button></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
+                        href="#lorem">Пизанелло</button></li>
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
+                        href="#lorem">Пинтуриккьо</button></li>
                   </ul>
                 </div>
               </li>
