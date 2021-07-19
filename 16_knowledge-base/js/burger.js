@@ -7,45 +7,45 @@ window.addEventListener('DOMContentLoaded', function () {
   })
 });
 
-window.addEventListener('DOMContentLoaded', function () {
-  const burger = document.querySelector(".item__link-realizm");
-  burger.addEventListener("click", () => {
-    burger.classList.toggle("item__link-active")
-  })
-});
+// window.addEventListener('DOMContentLoaded', function () {
+//   const burger = document.querySelector(".item__link-realizm");
+//   burger.addEventListener("click", () => {
+//     burger.classList.toggle("item__link-active")
+//   })
+// });
 
-window.addEventListener('DOMContentLoaded', function () {
-  const burger = document.querySelector(".item__link-impresionizm");
+// window.addEventListener('DOMContentLoaded', function () {
+//   const burger = document.querySelector(".item__link-impresionizm");
 
-  burger.addEventListener("click", () => {
+//   burger.addEventListener("click", () => {
 
-    burger.classList.toggle("item__link-active")
-  })
-});
+//     burger.classList.toggle("item__link-active")
+//   })
+// });
 
-window.addEventListener('DOMContentLoaded', function () {
-  const burger = document.querySelector(".item__link-postimpresionizm");
+// window.addEventListener('DOMContentLoaded', function () {
+//   const burger = document.querySelector(".item__link-postimpresionizm");
 
-  burger.addEventListener("click", () => {
+//   burger.addEventListener("click", () => {
 
-    burger.classList.toggle("item__link-active")
-  })
-});
+//     burger.classList.toggle("item__link-active")
+//   })
+// });
 
-window.addEventListener('DOMContentLoaded', function () {
-  const burger = document.querySelector(".item__link-avangard");
+// window.addEventListener('DOMContentLoaded', function () {
+//   const burger = document.querySelector(".item__link-avangard");
 
-  burger.addEventListener("click", () => {
+//   burger.addEventListener("click", () => {
 
-    burger.classList.toggle("item__link-active")
-  })
-});
+//     burger.classList.toggle("item__link-active")
+//   })
+// });
 
-window.addEventListener('DOMContentLoaded', function () {
-  const burger = document.querySelector(".item__link-futurizm");
+// window.addEventListener('DOMContentLoaded', function () {
+//   const burger = document.querySelector(".item__link-futurizm");
 
-  burger.addEventListener("click", () => {
+//   burger.addEventListener("click", () => {
 
-    burger.classList.toggle("item__link-active")
-  })
-});
+//     burger.classList.toggle("item__link-active")
+//   })
+// });

@@ -21,19 +21,20 @@ function myFunction(element) {
 
   thisDropdown.classList.toggle("show");
 }
-/* W3Schools function to close the dropdown when clicked outside. */
 
+;
+/* W3Schools function to close the dropdown when clicked outside. */
 
 window.onclick = function (event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
     var i;
 
-    for (i = 5; i < dropdowns.length; i++) {
+    for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
 
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+      if (openDropdown.classList.contains('.show')) {
+        openDropdown.classList.remove('.show');
       }
     }
   }

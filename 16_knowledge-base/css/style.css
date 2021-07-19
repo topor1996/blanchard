@@ -697,7 +697,7 @@ h3 {
 }
 
 .select {
-  display: inline-block;
+  display: none;
   font-size: 16px;
   color: #fff;
   width: 185px;
@@ -711,7 +711,7 @@ h3 {
 
 .select-styled {
   cursor: pointer;
-  display: inline-block;
+  display: none;
   top: 0;
   right: 0;
   bottom: 0;
@@ -1804,7 +1804,7 @@ h3 {
   font-weight: normal;
   font-size: 16px;
   line-height: 32px;
-  margin-bottom: 39px;
+  margin-bottom: 35px;
 }
 
 .catalog-block {

@@ -44,70 +44,12 @@ window.addEventListener('DOMContentLoaded', function () {
       });
     });
     /* END ACCORDION */
-    // document.querySelectorAll('.item__link').forEach(function (tabsBtn) {
-    //   tabsBtn.addEventListener('click', function (event) {
-    //     let tab = event.currentTarget.dataset.tab;
-    //     document.querySelectorAll('.item__link').forEach(function (link) {
-    //       link.classList.remove('item__link-active');
-    //     });
-    //     tabsBtn.classList.add('item__link-active');
-    //   });
-    // });
 
-    document.addEventListener('DOMContentLoader', function () {
-      document.querySelectorAll('.item__link-realizm').forEach(function (tabsBtn) {
-        tabsBtn.addEventListener('click', function (event) {
-          var path = event.currentTarget.dataset.path;
-          document.querySelectorAll('.item__link-realizm').forEach(function (tabContent) {
-            tabContent.classList.remove('item__link-active');
-          });
-          document.querySelector("[data-target=\"".concat(path, "\"]")).classList.add('item__link-active');
-        });
-      });
-    });
-    document.addEventListener('DOMContentLoader', function () {
-      document.querySelectorAll('.item__link-impresionizm').forEach(function (tabsBtn) {
-        tabsBtn.addEventListener('click', function (event) {
-          var path = event.currentTarget.dataset.path;
-          document.querySelectorAll('.item__link-impresionizm').forEach(function (tabContent) {
-            tabContent.classList.remove('item__link-active');
-          });
-          document.querySelector("[data-target=\"".concat(path, "\"]")).classList.add('item__link-active');
-        });
-      });
-    });
-    document.addEventListener('DOMContentLoader', function () {
-      document.querySelectorAll('.item__link-postimpresionizm').forEach(function (tabsBtn) {
-        tabsBtn.addEventListener('click', function (event) {
-          var path = event.currentTarget.dataset.path;
-          document.querySelectorAll('.item__link-postimpresionizm').forEach(function (tabContent) {
-            tabContent.classList.remove('item__link-active');
-          });
-          document.querySelector("[data-target=\"".concat(path, "\"]")).classList.add('item__link-active');
-        });
-      });
-    });
-    document.addEventListener('DOMContentLoader', function () {
-      document.querySelectorAll('.item__link-avangard').forEach(function (tabsBtn) {
-        tabsBtn.addEventListener('click', function (event) {
-          var path = event.currentTarget.dataset.path;
-          document.querySelectorAll('.item__link-avangard').forEach(function (tabContent) {
-            tabContent.classList.remove('item__link-active');
-          });
-          document.querySelector("[data-target=\"".concat(path, "\"]")).classList.add('item__link-active');
-        });
-      });
-    });
-    document.addEventListener('DOMContentLoader', function () {
-      document.querySelectorAll('.item__link-futurizm').forEach(function (tabsBtn) {
-        tabsBtn.addEventListener('click', function (event) {
-          var path = event.currentTarget.dataset.path;
-          document.querySelectorAll('.item__link-futurizm').forEach(function (tabContent) {
-            tabContent.classList.remove('item__link-active');
-          });
-          document.querySelector("[data-target=\"".concat(path, "\"]")).classList.add('item__link-active');
-        });
-      });
+    $('.item__link').click(function () {
+      $('.item__link').not($(this)).removeClass("item__link-active");
+      $(this).toggleClass("item__link-active");
+      $('.item__link').not($(this)).siblings(".dropdown-content").removeClass("show");
+      $(this).siblings(".dropdown-content").toggleClass("show");
     });
     /* ACCORDION TABS */
 
@@ -369,12 +311,11 @@ window.addEventListener('DOMContentLoaded', function () {
           console.log("Selected catalog lang is '".concat(selectedLang, "'"));
         });
       });
-    });
-    var element = document.querySelector('.select');
-    var choices = new Choices(element, {
-      searchEnabled: false,
-      searchChoices: false
-    });
+    }); // const element = document.querySelector('.select');
+    // const choices = new Choices(element, {
+    //   searchEnabled: false,
+    //   searchChoices: false,
+    // });
 
     function showMore() {
       $(".event-more-btn").click(function () {
