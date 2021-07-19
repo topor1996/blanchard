@@ -738,6 +738,7 @@
   .header__nav {
     display: block;
     order: 0;
+    margin-bottom: 100px;
   }
   .slider {
     top: -44px;
@@ -747,7 +748,7 @@
     position: absolute;
     left: 0;
     top: 80px;
-    bottom: -504px;
+    bottom: -450px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -771,7 +772,7 @@
   .item__nav__list {
     display: flex;
     flex-direction: column;
-margin: 0;
+    margin: 0;
   }
   .header-btn {
     width: max-content;
@@ -783,7 +784,6 @@ margin: 0;
     color: #FFFFFF;
     text-decoration: none;
     position: relative;
-    margin-top: 100px;
   }
   .header-btn:focus.header-btn::after {
     content: "";
@@ -965,9 +965,6 @@ margin: 0;
   .catalog-right-child {
     grid-template: repeat(12, 33px)/repeat(1, 250px);
   }
-  .accordion .open-accordion-list {
-    height: 337px !important;
-}
 }
 
 @media (max-width:1008px) {
@@ -1026,7 +1023,7 @@ margin: 0;
   .catalog-right-child {
     grid-template: repeat(9, 32px)/repeat(3, 246px);
   }
-  .open-accordion-list {
+ .accordion .open-accordion-list {
     height: auto !important;
     padding-bottom: 24px;
   }
@@ -1256,6 +1253,9 @@ margin: 0;
     top: 0px;
     left: 0px;
   }
+  .filter__list {
+    background: #666666;
+  }
   .search-close-button--appear>svg {
     width: 16px;
     height: 16px;
@@ -1326,9 +1326,7 @@ margin: 0;
   .gallery-block {
     margin-top: 1px;
   }
-  .catalog-right-child {
-    grid-template: repeat(9, 32px)/repeat(3, 246px);
-  }
+
   .open-accordion-list {
     height: 339px !important;
   }
@@ -1373,6 +1371,9 @@ margin: 0;
   .event-block {
     padding-left: 33px;
     padding-right: 30px;
+  }
+  .accordion .open-accordion-list {
+    height: auto !important;
   }
   .publishing-container {
     display: flex;
@@ -1495,7 +1496,7 @@ margin: 0;
   .flex {
     top: 45px;
     padding-left: 15px;
-    bottom: -104px;
+    bottom: -50px;
   }
   .item__nav__list {
     margin: 0;
@@ -1506,6 +1507,9 @@ margin: 0;
   }
   .list__item {
     line-height: 34px;
+  }
+  .header__nav {
+    margin-bottom: 20px;
   }
   .header-btn {
     padding: 10px 40px;
@@ -1581,6 +1585,7 @@ margin: 0;
   }
   .gallery__block {
     width: 100%;
+    z-index: 3;
   }
   .gallery-title {
     margin-bottom: 18px;
@@ -1611,6 +1616,7 @@ margin: 0;
   }
   .swiper-wrapper {
     margin: 0;
+    z-index: 4;
   }
   .gallery-slider {
     margin-top: 0;
@@ -1640,7 +1646,6 @@ margin: 0;
     display: flex;
     justify-content: space-between;
   }
-
   .catalog-text {
     display: none;
   }
@@ -2044,7 +2049,7 @@ margin: 0;
   .flex {
     top: 45px;
     padding-left: 15px;
-    bottom: -101px;
+    bottom: -50px;
   }
 }
 
@@ -2052,21 +2057,25 @@ margin: 0;
   .flex {
     top: 58px;
     padding-left: 15px;
-    bottom: -53px;
+    bottom: -45px;
+  }
+  .header__nav {
+    margin-bottom: 10px;
   }
 }
 
-@media (max-width: 696px) {
-  .catalog-firsth-child {
-    grid-template: repeat(12, 32px)/repeat(3, 246px);
-  }
-}
 
 @media (max-width: 670px) {
   .flex {
     top: 54px;
     padding-left: 15px;
-    bottom: -98px;
+    bottom: -45px;
+  }
+}
+
+@media (max-width: 630px) {
+  .catalog-firsth-child {
+    grid-template: repeat(8, 32px)/repeat(3, 205px);
   }
 }
 
@@ -2074,7 +2083,7 @@ margin: 0;
   .flex {
     top: 50px;
     padding-left: 15px;
-    bottom: -95px;
+    bottom: -40px;
   }
 }
 
@@ -2082,7 +2091,7 @@ margin: 0;
   .flex {
     top: 47px;
     padding-left: 15px;
-    bottom: -89px;
+    bottom: -35px;
   }
 }
 
@@ -2146,13 +2155,6 @@ margin: 0;
   }
 }
 
-@media (max-width: 471px) {
-  .flex {
-    top: 45px;
-    padding-left: 15px;
-    bottom: -40px;
-  }
-}
 
 @media (max-width: 445px) {
   .catalog-firsth-child {
@@ -2160,20 +2162,9 @@ margin: 0;
   }
 }
 
-@media (max-width: 435px) {
-  .flex {
-    top: 42px;
-    padding-left: 15px;
-    bottom: -37px;
-  }
-}
 
 @media (max-width: 419px) {
-  .flex {
-    top: 42px;
-    padding-left: 15px;
-    bottom: -54px;
-  }
+
   .catalog-firsth-child {
     grid-template: repeat(12, 32px)/repeat(3, 200px);
   }
@@ -2194,10 +2185,3 @@ margin: 0;
   }
 }
 
-@media (max-width: 386px) {
-  .flex {
-    top: 40px;
-    padding-left: 15px;
-    bottom: -89px;
-  }
-}
