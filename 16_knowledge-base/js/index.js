@@ -49,24 +49,24 @@ $(function () {
 });
 /* END ACCORDION */
 
-$('.item__link').click(function(){
-  $('.item__link').not($(this)).removeClass("item__link-active");
-  $(this).toggleClass("item__link-active");
-  $('.item__link').not($(this)).siblings(".dropdown-content").removeClass("show");
+$('.bottom-list-link').click(function(){
+  $('.bottom-list-link').not($(this)).removeClass("bottom-list-link-active");
+  $(this).toggleClass("bottom-list-link-active");
+  $('.bottom-list-link').not($(this)).siblings(".dropdown-content").removeClass("show");
   $(this).siblings(".dropdown-content").toggleClass("show");
 });
 
 /* ACCORDION TABS */
 
-document.querySelectorAll('.flag-btn').forEach(function (tabsBtn) {
+document.querySelectorAll('.flag-item-btn').forEach(function (tabsBtn) {
   tabsBtn.addEventListener('click', function (event) {
     let tab = event.currentTarget.dataset.tab;
 
-    document.querySelectorAll('.flag-btn').forEach(function (link) {
-      link.classList.remove('flag-btn_active');
+    document.querySelectorAll('.flag-item-btn').forEach(function (link) {
+      link.classList.remove('flag-item-btn_active');
     });
 
-    tabsBtn.classList.add('flag-btn_active');
+    tabsBtn.classList.add('flag-item-btn_active');
 
     document.querySelectorAll('.language').forEach(function (tabContent) {
       tabContent.classList.remove('language_active');
@@ -324,10 +324,10 @@ var swiper = new Swiper(".project-slide", {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const catalogLangBtn = document.querySelectorAll('.flag-btn');
+  const catalogLangBtn = document.querySelectorAll('.flag-item-btn');
   catalogLangBtn.forEach((btn) => btn.addEventListener('click', () => {
     const selectedLang = btn.dataset.lang;
-    const selectedBtn = document.querySelector('.flag-btn.selected');
+    const selectedBtn = document.querySelector('.flag-item-btn.selected');
     btn.classList.add('selected');
     selectedBtn.classList.remove('selected');
 

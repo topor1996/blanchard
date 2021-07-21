@@ -29,28 +29,31 @@
             <path d="M24 25.0478H0V28.7H24V25.0478Z" fill="white" />
           </svg>
         </button>
+        <a href="#" class="header__logo">
+          <img src="img/logo.png" alt="Логотип">
+        </a>
         <div class="header-burger-menu">
           <nav class="header__nav header__menu">
-            <ul id="Dropdown" class="header-nav__list item__nav__list">
-              <li class="list__item header-nav__item">
+            <ul id="Dropdown" class="header-nav__list">
+              <li class=" header-nav__item">
                 <a class="list__link" href="#about-us">О нас</a>
               </li>
-              <li class="list__item header-nav__item">
+              <li class=" header-nav__item">
                 <a class="list__link" href="#gallery">Галерея</a>
               </li>
-              <li class="list__item header-nav__item">
+              <li class=" header-nav__item">
                 <a class="list__link" href="#catalog">Каталог</a>
               </li>
-              <li class="list__item header-nav__item">
+              <li class=" header-nav__item">
                 <a class="list__link" href="#events">События</a>
               </li>
-              <li class="list__item header-nav__item">
+              <li class=" header-nav__item">
                 <a class="list__link" href="#publishing">Издания</a>
               </li>
-              <li class="list__item header-nav__item">
+              <li class=" header-nav__item">
                 <a class="list__link" href="#project">Проекты</a>
               </li>
-              <li class="list__item header-nav__item">
+              <li class=" header-nav__item">
                 <a class="list__link" href="#contacts">Контакты</a>
               </li>
             </ul>
@@ -67,11 +70,9 @@
         <button type="button" class="menu-toggle" id="burger">
           <span class="menu-toggle__line"></span>
         </button>
-        <a href="#" class="header__logo">
-          <img src="img/logo.png" alt="Логотип">
-        </a>
 
-        <a href="#" class="header__entry effects" tabindex="0">
+
+        <a href="#" class="header__entry effects">
           <svg class="svg-enter" width="18" height="13" viewBox="0 0 18 13" fill="white">
             <path class="entry__img"
               d="M 5.12056 9.09278 L 6.13889 10.1111 L 9.75 6.5 L 6.13889 2.88889 L 5.12056 3.90722 L 6.98389 5.77778 H 0 V 7.22222 H 6.98389 L 5.12056 9.09278 Z M 11.5556 0 H 1.44444 C 0.642778 0 0 0.65 0 1.44444 V 4.33333 H 1.44444 V 1.44444 H 11.5556 V 11.5556 H 1.44444 V 8.66667 H 0 V 11.5556 C 0 12.35 0.642778 13 1.44444 13 H 11.5556 C 12.35 13 13 12.35 13 11.5556 V 1.44444 C 13 0.65 12.35 0 11.5556 0 Z">
@@ -109,7 +110,7 @@
         <div class="header__menu-bottom menu-bottom">
           <ul class="menu__list_bottom list">
             <li class="dropdown bottom-list-item bottom-list-1">
-              <button  class="dropbtn item__link link-dropdown item__link-realizm">
+              <button class="dropbtn bottom-list-link link-dropdown bottom-list-link-realizm">
                 <span>Реализм</span>
                 <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11 1L6 6L0.999998 1" stroke="white" />
@@ -135,7 +136,7 @@
               </div>
             </li>
             <li class="dropdown bottom-list-item bottom-list-1">
-              <button  class="dropbtn item__link link-dropdown item__link-impresionizm">
+              <button class="dropbtn bottom-list-link link-dropdown bottom-list-link-impresionizm">
                 <span>Импрессионизм</span>
                 <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11 1L6 6L0.999998 1" stroke="white" />
@@ -161,7 +162,7 @@
               </div>
             </li>
             <li class="dropdown bottom-list-item bottom-list-1">
-              <button  class="dropbtn item__link link-dropdown item__link-postimpresionizm">
+              <button class="dropbtn bottom-list-link link-dropdown bottom-list-link-postimpresionizm">
                 <span>Постимпрессионизм</span>
                 <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11 1L6 6L0.999998 1" stroke="white" />
@@ -187,7 +188,7 @@
               </div>
             </li>
             <li class="dropdown bottom-list-item bottom-list-1">
-              <button  class="dropbtn item__link link-dropdown item__link-avangard">
+              <button class="dropbtn bottom-list-link link-dropdown bottom-list-link-avangard">
                 <span>Авангард</span>
                 <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11 1L6 6L0.999998 1" stroke="white" />
@@ -213,7 +214,7 @@
               </div>
             </li>
             <li class="dropdown bottom-list-item bottom-list-1">
-              <button  class="dropbtn item__link link-dropdown item__link-futurizm">
+              <button class="dropbtn bottom-list-link link-dropdown bottom-list-link-futurizm">
                 <span>Футуризм</span>
                 <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M11 1L6 6L0.999998 1" stroke="white" />
@@ -244,7 +245,7 @@
 
 
         <form action="#" class="header-bottom__form">
-          <button class="header-bottom__btn-search" type="button" tabindex="0">
+          <button class="header-bottom__btn-search" type="button">
             <svg class="btn-search__icon" width="23" height="22" viewBox="0 0 23 22" xmlns="http://www.w3.org/2000/svg">
               <rect width="6.8678" height="1.71695"
                 transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)" fill="white" />
@@ -301,9 +302,10 @@
             </h2>
             <span class="gallery-filter-row">Фильтровать по:</span>
             <div class="filter gallery__filter">
-              <svg class="filter__icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 1L6 6L0.999998 1" stroke="white"/>
-                </svg>
+              <svg class="filter__icon" width="12" height="7" viewBox="0 0 12 7" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1L6 6L0.999998 1" stroke="white" />
+              </svg>
               <select class="filter__select" id="gallery__filter" name="gallery__filter">
                 <option class="filter__option" value="Автор">
                   Автор
@@ -406,15 +408,15 @@
     <section class="catalog" id="catalog">
       <div class="container catalog-container">
         <div class="top-catalog">
-          <h2 class="catalog-tittle">
+          <h2 class="title catalog-tittle">
             Каталог
           </h2>
           <ul class="flag flag-list">
-           <li class="flag-item"><button class="flag-btn france" data-tab="four"></button></li>
-            <li class="flag-item"><button class="flag-btn germany" data-tab="four"></button></li>
-            <li class="flag-item"><button class="flag-btn italy" data-tab="four"></button></li>
-            <li class="flag-item"><button class="flag-btn flag-btn_active russia" data-tab="five"></button></li>
-            <li class="flag-item"><button class="flag-btn belgia" data-tab="four"></button></li>
+            <li class="flag-item"><button class="flag-item-btn france" data-tab="four"></button></li>
+            <li class="flag-item"><button class="flag-item-btn germany" data-tab="four"></button></li>
+            <li class="flag-item"><button class="flag-item-btn italy" data-tab="four"></button></li>
+            <li class="flag-item"><button class="flag-item-btn flag-item-btn_active russia" data-tab="five"></button></li>
+            <li class="flag-item"><button class="flag-item-btn belgia" data-tab="four"></button></li>
           </ul>
         </div>
 
@@ -429,7 +431,7 @@
             <div class="catalog-left-block catalog-left-block_active" data-content="one">
               <div><a id="Girlandao"></a></div>
               <img class="img-left-catalog" src="img/im3.jpg" alt="">
-              <h3>
+              <h3 class="small-tittle small-tittle-catalog">
                 Доменико Гирландайо
               </h3>
               <p class="placeholder-left-catalog">2 июня 1448 — 11 января 1494.</p>
@@ -447,7 +449,7 @@
             <div data-target="lorem" class="catalog-left-block" data-content="two">
               <div><a id="lorem"></a></div>
               <img class="img-hudojnik" src="img/hudojnik.png" alt="">
-              <h3>
+              <h3 class="small-tittle">
                 Что мы о нём знаем?
               </h3>
               <p>Пока ничего... Зато мы точно знаем, что в галерее есть на что посмотреть!</p>
@@ -457,55 +459,68 @@
             <ul class="catalog-right-block accordion">
               <li class="questions-content-heading">
                 <div class="catalog-right-heading">
-                  <h4 class="catalog-right-header" tabindex="0">C 1400 по 1499 гг.</h4>
+                  <p class="catalog-right-header" tabindex="0">C 1400 по 1499 гг.</p>
                   <button class="catalog-right-btn" aria-label="развернуть ссылку">
                   </button>
                 </div>
                 <div class="open-accordion-list">
                   <ul class="catalog-right-child catalog-firsth-child">
-                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Бенедетто
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
+                        href="#lorem">Бенедетто
                         ди Биндо</button> </li>
                     <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
                         href="#lorem">Бергоньоне, Амброджо</button></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Биссоло,
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
+                        href="#lorem">Биссоло,
                         Франческо</button></li>
                     <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
                         href="#lorem">Больтраффио, Джованни</button></li>
                     <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
                         href="#lorem">Бонсиньори, Франческо</button></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Боттичини,
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
+                        href="#lorem">Боттичини,
                         Рафаэлло</button></li>
                     <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
                         href="#lorem">Брамантино</button></li>
                     <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Бреа,
                         Людовико</button></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Бьяджо
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
+                        href="#lorem">Бьяджо
                         д’Антонио Туччи</button></li>
                     <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
                         href="#lorem">Веккьетта</button></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Андреа
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
+                        href="#lorem">Андреа
                         Верроккьо</button></li>
                     <li class="artist artist_active" data-path="one" data-tab="one"><button class="artist__item"
                         href="#Girlandao">Доменико Гирландайо</button></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Беноццо
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
+                        href="#lorem">Беноццо
                         Гоццоли</button></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Граначчи,
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
+                        href="#lorem">Граначчи,
                         Франческо</button></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Грегорио
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
+                        href="#lorem">Грегорио
                         ди Чекко</button></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Джованни
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
+                        href="#lorem">Джованни
                         да Удине</button></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Джованни
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
+                        href="#lorem">Джованни
                         ди Паоло</button></li>
                     <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
                         href="#lorem">Джорджоне</button></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Парентино,
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
+                        href="#lorem">Парентино,
                         Бернардо</button></li>
                     <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
                         href="#lorem">Пезеллино</button></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Пьетро
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
+                        href="#lorem">Пьетро
                         Перуджино</button></li>
-                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item" href="#lorem">Перуцци,
+                    <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
+                        href="#lorem">Перуцци,
                         Бальдассаре</button></li>
                     <li class="artist" data-path="lorem" data-tab="two"><button class="artist__item"
                         href="#lorem">Пизанелло</button></li>
@@ -517,7 +532,7 @@
 
               <li class="questions-content-heading">
                 <div class="catalog-right-heading">
-                  <h4 class="catalog-right-header" tabindex="0">C 1500 по 1599 гг.</h4>
+                  <p class="catalog-right-header" tabindex="0">C 1500 по 1599 гг.</p>
                   <button class="catalog-right-btn" aria-label="развернуть ссылку"></button>
                 </div>
                 <div class="open-accordion-list ">
@@ -525,7 +540,7 @@
                     <li class="artist-lorem">
                       <img src="img/Rectangle212.png" alt="">
                       <div class="artist__list">
-                        <h3>
+                        <h3 class="small-tittle">
                           Здесь пока пусто
                         </h3>
                         <p>А в галерее вы всегда можете найти что-то интересное для себя</p>
@@ -538,7 +553,7 @@
 
               <li class="questions-content-heading">
                 <div class="catalog-right-heading">
-                  <h4 class="catalog-right-header" tabindex="0">C 1600 по 1699 гг.</h4>
+                  <p class="catalog-right-header" tabindex="0">C 1600 по 1699 гг.</p>
                   <button class="catalog-right-btn" aria-label="развернуть ссылку"></button>
                 </div>
                 <div class="open-accordion-list">
@@ -546,7 +561,7 @@
                     <li class="artist-lorem">
                       <img src="img/Rectangle212.png" alt="">
                       <div class="artist__list">
-                        <h3>
+                        <h3 class="small-tittle">
                           Здесь пока пусто
                         </h3>
                         <p>А в галерее вы всегда можете найти что-то интересное для себя</p>
@@ -559,7 +574,7 @@
 
               <li class="questions-content-heading">
                 <div class="catalog-right-heading">
-                  <h4 class="catalog-right-header" tabindex="0">C 1700 по 1799 гг.</h4>
+                  <p class="catalog-right-header" tabindex="0">C 1700 по 1799 гг.</p>
                   <button class="catalog-right-btn" aria-label="развернуть ссылку"></button>
                 </div>
                 <div class="open-accordion-list">
@@ -567,7 +582,7 @@
                     <li class="artist-lorem">
                       <img src="img/Rectangle212.png" alt="">
                       <div class="artist__list">
-                        <h3>
+                        <h3 class="small-tittle">
                           Здесь пока пусто
                         </h3>
                         <p>А в галерее вы всегда можете найти что-то интересное для себя</p>
@@ -580,7 +595,7 @@
 
               <li class="questions-content-heading">
                 <div class="catalog-right-heading">
-                  <h4 class="catalog-right-header" tabindex="0">C 1800 по 1899 гг.</h4>
+                  <p class="catalog-right-header" tabindex="0">C 1800 по 1899 гг.</p>
                   <button class="catalog-right-btn" aria-label="развернуть ссылку"></button>
                 </div>
                 <div class="open-accordion-list">
@@ -588,7 +603,7 @@
                     <li class="artist-lorem">
                       <img src="img/Rectangle212.png" alt="">
                       <div class="artist__list">
-                        <h3>
+                        <h3 class="small-tittle">
                           Здесь пока пусто
                         </h3>
                         <p>А в галерее вы всегда можете найти что-то интересное для себя</p>
@@ -601,7 +616,7 @@
 
               <li class="questions-content-heading">
                 <div class="catalog-right-heading">
-                  <h4 class="catalog-right-header" tabindex="0">C 1900 по 1999 гг.</h4>
+                  <p class="catalog-right-header" tabindex="0">C 1900 по 1999 гг.</p>
                   <button class="catalog-right-btn" aria-label="развернуть ссылку"></button>
                 </div>
                 <div class="open-accordion-list">
@@ -609,7 +624,7 @@
                     <li class="artist-lorem">
                       <img src="img/Rectangle212.png" alt="">
                       <div class="artist__list">
-                        <h3>
+                        <h3 class="small-tittle">
                           Здесь пока пусто
                         </h3>
                         <p>А в галерее вы всегда можете найти что-то интересное для себя</p>
@@ -622,7 +637,7 @@
 
               <li class="questions-content-heading">
                 <div class="catalog-right-heading">
-                  <h4 class="catalog-right-header" tabindex="0">C 2000 г.</h4>
+                  <p class="catalog-right-header" tabindex="0">C 2000 г.</p>
                   <button class="catalog-right-btn" aria-label="развернуть ссылку"></button>
                 </div>
                 <div class="open-accordion-list">
@@ -630,7 +645,7 @@
                     <li class="artist-lorem">
                       <img src="img/Rectangle212.png" alt="">
                       <div class="artist__list">
-                        <h3>
+                        <h3 class="small-tittle">
                           Здесь пока пусто
                         </h3>
                         <p>А в галерее вы всегда можете найти что-то интересное для себя</p>
@@ -654,7 +669,7 @@
           <div class="catalog-block">
             <div data-target="lorem" class="catalog-left-block-language" data-content="two">
               <img class="img-hudojnik" src="img/hudojnik.png" alt="">
-              <h3>
+              <h3 class="small-tittle">
                 What do we know about him?
               </h3>
               <p>Nothing yet... But we know for sure that there is something to see in the gallery!</p>
@@ -665,14 +680,14 @@
             <div class="accordions">
 
               <div class="catalog-right-heading">
-                <h4 class="catalog-right-header">From 1400 to 1499 .</h4>
+                <p class="catalog-right-header">From 1400 to 1499 .</p>
               </div>
               <div class="open-accordion-list">
                 <div class="catalog-right-child">
                   <div class="artist-lorem">
                     <img src="img/Rectangle212.png" alt="">
                     <div class="artist__list">
-                      <h3>
+                      <h3 class="small-tittle">
                         It`s still empty here
                       </h3>
                       <p>And in the gallery you can always find something interesting for yourself</p>
@@ -685,14 +700,14 @@
 
 
               <div class="catalog-right-heading">
-                <h4 class="catalog-right-header">From 1500 to 1599 .</h4>
+                <p class="catalog-right-header">From 1500 to 1599 .</p>
               </div>
               <div class="open-accordion-list">
                 <div class="catalog-right-child">
                   <div class="artist-lorem">
                     <img src="img/Rectangle212.png" alt="">
                     <div class="artist__list">
-                      <h3>
+                      <h3 class="small-tittle">
                         It`s still empty here
                       </h3>
                       <p>And in the gallery you can always find something interesting for yourself</p>
@@ -703,14 +718,14 @@
               </div>
 
               <div class="catalog-right-heading">
-                <h4 class="catalog-right-header">From 1600 to 1699 .</h4>
+                <p class="catalog-right-header">From 1600 to 1699 .</p>
               </div>
               <div class="open-accordion-list">
                 <div class="catalog-right-child">
                   <div class="artist-lorem">
                     <img src="img/Rectangle212.png" alt="">
                     <div class="artist__list">
-                      <h3>
+                      <h3 class="small-tittle">
                         It`s still empty here
                       </h3>
                       <p>And in the gallery you can always find something interesting for yourself</p>
@@ -722,14 +737,14 @@
 
 
               <div class="catalog-right-heading">
-                <h4 class="catalog-right-header">From 1700 to 1799 .</h4>
+                <p class="catalog-right-header">From 1700 to 1799 .</p>
               </div>
               <div class="open-accordion-list">
                 <div class="catalog-right-child">
                   <div class="artist-lorem">
                     <img src="img/Rectangle212.png" alt="">
                     <div class="artist__list">
-                      <h3>
+                      <h3 class="small-tittle">
                         It`s still empty here
                       </h3>
                       <p>And in the gallery you can always find something interesting for yourself</p>
@@ -740,14 +755,14 @@
               </div>
 
               <div class="catalog-right-heading">
-                <h4 class="catalog-right-header">From 1800 to 1899 .</h4>
+                <p class="catalog-right-header">From 1800 to 1899 .</p>
               </div>
               <div class="open-accordion-list">
                 <div class="catalog-right-child">
                   <div class="artist-lorem">
                     <img src="img/Rectangle212.png" alt="">
                     <div class="artist__list">
-                      <h3>
+                      <h3 class="small-tittle">
                         It`s still empty here
                       </h3>
                       <p>And in the gallery you can always find something interesting for yourself</p>
@@ -758,14 +773,14 @@
               </div>
 
               <div class="catalog-right-heading">
-                <h4 class="catalog-right-header">From 1900 to 1999 .</h4>
+                <p class="catalog-right-header">From 1900 to 1999 .</p>
               </div>
               <div class="open-accordion-list">
                 <div class="catalog-right-child">
                   <div class="artist-lorem">
                     <img src="img/Rectangle212.png" alt="">
                     <div class="artist__list">
-                      <h3>
+                      <h3 class="small-tittle">
                         It`s still empty here
                       </h3>
                       <p>And in the gallery you can always find something interesting for yourself</p>
@@ -776,14 +791,14 @@
               </div>
 
               <div class="catalog-right-heading">
-                <h4 class="catalog-right-header">From 2000 ...</h4>
+                <p class="catalog-right-header">From 2000 ...</p>
               </div>
               <div class="open-accordion-list">
                 <div class="catalog-right-child">
                   <div class="artist-lorem">
                     <img src="img/Rectangle212.png" alt="">
                     <div class="artist__list">
-                      <h3>
+                      <h3 class="small-tittle">
                         It`s still empty here
                       </h3>
                       <p>And in the gallery you can always find something interesting for yourself</p>
@@ -802,7 +817,7 @@
 
     <section class="event" id="events">
       <div class="container event-container">
-        <h2 class="event-tittle">
+        <h2 class="title event-tittle">
           События
         </h2>
         <div class="swiper-container event__list-swapper">
@@ -811,7 +826,7 @@
               <img src="img/101.jpg" alt="Обложка" class="event__book-img">
               <p class="event__top-text-item">Музей им. Щусева <br> с 20 марта по 30 апреля</p>
               <div class="event-block">
-                <h3 class="event__book-titles">Книжная гравюра в живом восприятии</h3>
+                <h3 class="small-tittle event__book-titles">Книжная гравюра в живом восприятии</h3>
                 <p class="event__bottom-text-item">
                   Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
                   продолжили его брат Давид и сын Ридольфо.
@@ -824,7 +839,7 @@
               <img src="img/102.jpg" alt="Обложка" class="event__book-img">
               <p class="event__top-text-item">ММОМА<br> 24 марта 19:00</p>
               <div class="event-block">
-                <h3 class="event__book-titles">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+                <h3 class="small-tittle event__book-titles">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
                 <p class="event__bottom-text-item">
                   Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
                   факта.
@@ -836,7 +851,7 @@
               <img src="img/103.jpg" alt="Обложка" class="event__book-img">
               <p class="event__top-text-item">Еврейский музей<br> с 31 марта по 21 апреля</p>
               <div class="event-block">
-                <h3 class="event__book-titles">Выставка «Формация 2020»</h3>
+                <h3 class="small-tittle event__book-titles">Выставка «Формация 2020»</h3>
                 <p class="event__bottom-text-item">
                   Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в
                   формировании глубокомысленных рассуждений.
@@ -848,7 +863,7 @@
               <img src="img/104.jpg" alt="Обложка" class="event__book-img">
               <p class="event__top-text-item">Третьяковка на Крымском валу<br> с 30 марта по 30 апреля</p>
               <div class="event-block">
-                <h3 class="event__book-titles">XXIV Международная биеннале молодого искусства</h3>
+                <h3 class="small-tittle event__book-titles">XXIV Международная биеннале молодого искусства</h3>
                 <p class="event__bottom-text-item">
                   Внезапно, реплицированные с зарубежных источников, современные исследования.
                 </p>
@@ -859,7 +874,7 @@
               <img src="img/105.jpg" alt="Обложка" class="event__book-img">
               <p class="event__top-text-item">ММАМ<br> с 8 апреля по 20 мая</p>
               <div class="event-block">
-                <h3 class="event__book-titles">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+                <h3 class="small-tittle event__book-titles">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
                 <p class="event__bottom-text-item">
                   Один из ведущих флорентийских художников Кватроченто, основатель художественной
                   династии, которую продолжили его брат Давид и сын Ридольфо.
@@ -875,7 +890,7 @@
             <img src="img/101.jpg" alt="Обложка" class="event__book-img">
             <p class="event__top-text-item">Музей им. Щусева <br> с 20 марта по 30 апреля</p>
             <div class="event-block">
-              <h3 class="event__book-titles">Книжная гравюра в живом восприятии</h3>
+              <h3 class="small-tittle event__book-titles">Книжная гравюра в живом восприятии</h3>
               <p class="event__bottom-text-item">
                 Один из ведущих флорентийских художников Кватроченто, основатель художественной династии, которую
                 продолжили его брат Давид и сын Ридольфо.
@@ -888,7 +903,7 @@
             <img src="img/102.jpg" alt="Обложка" class="event__book-img">
             <p class="event__top-text-item">ММОМА<br> 24 марта 19:00</p>
             <div class="event-block">
-              <h3 class="event__book-titles">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
+              <h3 class="small-tittle event__book-titles">«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.</h3>
               <p class="event__bottom-text-item">
                 Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого
                 факта.
@@ -900,7 +915,7 @@
             <img src="img/103.jpg" alt="Обложка" class="event__book-img">
             <p class="event__top-text-item">Еврейский музей<br> с 31 марта по 21 апреля</p>
             <div class="event-block">
-              <h3 class="event__book-titles">Выставка «Формация 2020»</h3>
+              <h3 class="small-tittle event__book-titles">Выставка «Формация 2020»</h3>
               <p class="event__bottom-text-item">
                 Идейные соображения высшего порядка, а также современная методология разработки играет важную роль в
                 формировании глубокомысленных рассуждений.
@@ -912,7 +927,7 @@
             <img src="img/104.jpg" alt="Обложка" class="event__book-img">
             <p class="event__top-text-item">Третьяковка на Крымском валу<br> с 30 марта по 30 апреля</p>
             <div class="event-block">
-              <h3 class="event__book-titles">XXIV Международная биеннале молодого искусства</h3>
+              <h3 class="small-tittle event__book-titles">XXIV Международная биеннале молодого искусства</h3>
               <p class="event__bottom-text-item">
                 Внезапно, реплицированные с зарубежных источников, современные исследования.
               </p>
@@ -923,7 +938,7 @@
             <img src="img/105.jpg" alt="Обложка" class="event__book-img">
             <p class="event__top-text-item">ММАМ<br> с 8 апреля по 20 мая</p>
             <div class="event-block">
-              <h3 class="event__book-titles">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
+              <h3 class="small-tittle event__book-titles">Джон Винзор. Фотографии из серии «Метафора серебра»</h3>
               <p class="event__bottom-text-item">
                 Один из ведущих флорентийских художников Кватроченто, основатель художественной
                 династии, которую продолжили его брат Давид и сын Ридольфо.
@@ -939,12 +954,12 @@
     <section class="publishing" id="publishing">
       <div class="container publishing-container">
         <div class="publishing__block">
-          <h2 class="publishing__title">
+          <h2 class="title publishing__title">
             Издания
           </h2>
 
           <div id="editions-accordion">
-            <h3>Категории</h3>
+            <h3 class="small-tittle">Категории</h3>
             <div>
               <div class="editions-categories__item">
                 <label for="acc-bestsellers-checkbox" class="editions-categories__label">
@@ -1146,7 +1161,7 @@
 
 
           <div class="publish-desktop">
-            <h3 class="publishing__check-title">Категории</h3>
+            <h3 class="small-tittle publishing__check-title">Категории</h3>
             <div class="label-publish__check">
               <label class="publish__check publish__option publish-label-1">
                 <input type="checkbox" class="publish__check-input">
@@ -1495,7 +1510,7 @@
           Подробнее: <a class="projects-link" href="#">blanchard-art.ru/projects/about</a>
         </p>
         <div class="proyect__slide">
-          <h3 class="proyect__part">Партнёры проектов:</h3>
+          <h3 class="small-tittle proyect__part">Партнёры проектов:</h3>
           <div class="sliderpro">
             <div class="swiper-button-prev button-project-prev"></div>
             <div class="swiper-button-next button-project-next"></div>
@@ -1528,10 +1543,10 @@
         <div class="contacts-form-block">
 
 
-          <h3 class="contacts-address-subtitle">Шоурум №4</h3><span class="contacts-address">Леонтьевский переулок,
+          <h3 class="small-tittle contacts-address-subtitle">Шоурум №4</h3><span class="contacts-address">Леонтьевский переулок,
             дом
             5, строение 1</span>
-          <h3 class="contacts-form-subtitle">Заказать обратный звонок</h3>
+          <h3 class="small-tittle contacts-form-subtitle">Заказать обратный звонок</h3>
           <form action="https://jsonplaceholder.typicode.com/posts" class="footer-form" autocomplete method="POST">
             <div class="footer-input">
               <input name="Имя" class="footer-input__full-name" type="text" placeholder="Имя*"
@@ -1543,7 +1558,7 @@
             </div>
             <button class="button contacts-form-button" type="submit">Заказать</button>
           </form>
-          <h3 class="contacts-socials-subtitle">Связаться в один клик</h3>
+          <h3 class="small-tittle contacts-socials-subtitle">Связаться в один клик</h3>
           <div class="contacts__soc">
             <a class="contacts-wa" href="https://api.whatsapp.com/send?text"><img src="img/Whatsapp-Icon.svg"
                 alt="whats app" class="contacts__soc-img"></a>

@@ -6,10 +6,10 @@
     width: 35%;
   }
   .gallery-slider {
-    margin-top: 22px;
+    padding-top: 36px;
   }
-  .gallery__item:nth-child(n+10) {
-    margin-top: 55px !important;
+  .gallery__item:nth-child(-n+9) {
+    margin-bottom: 49px !important;
   }
 }
 
@@ -82,7 +82,7 @@
   .event__item {
     max-width: 30.8%;
   }
-  .list__item:not(:last-child) {
+  .header-nav__item:not(:last-child) {
     margin-right: 56px;
   }
   .catalog-right-child {
@@ -190,7 +190,7 @@
     padding-left: 100px;
     padding-right: 100px;
   }
-  .list__item:not(:last-child) {
+  .header-nav__item:not(:last-child) {
     margin-right: 50px;
   }
   .event__item {
@@ -271,7 +271,7 @@
   .catalog-right-block {
     width: 65%;
   }
-  .list__item:not(:last-child) {
+  .header-nav__item:not(:last-child) {
     margin-right: 40px;
   }
   .event-block {
@@ -425,7 +425,7 @@
     padding-left: 65px;
     padding-right: 65px;
   }
-  .list__item:not(:last-child) {
+  .header-nav__item:not(:last-child) {
     margin-right: 30px;
   }
   .contacts-form-block {
@@ -576,7 +576,7 @@
   .bottom-list-item:not(:last-child) {
     margin-right: 5px;
   }
-  .item__link {
+  .bottom-list-link {
     padding-left: 3px;
     padding-right: 3px;
   }
@@ -625,7 +625,7 @@
 }
 
 @media (max-width:1050px) {
-  .list__item:not(:last-child) {
+  .header-nav__item:not(:last-child) {
     margin-right: 20px;
   }
   .section-first__title {
@@ -634,8 +634,8 @@
   .section-first__paragraph {
     width: 61%;
   }
-  .gallery__item:nth-child(n+10) {
-    margin-top: 42px !important;
+  .gallery__item:nth-child(-n+9) {
+    margin-bottom: 42px !important;
   }
 }
 
@@ -661,7 +661,7 @@
     padding-top: 114px;
     padding-bottom: 110px;
   }
-  .list__item {
+  .header-nav__item {
     line-height: 64px;
   }
   .section-first__paragraph {
@@ -769,7 +769,7 @@
   .header-bottom {
     display: none;
   }
-  .item__nav__list {
+  .header-nav__list {
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -833,9 +833,9 @@
     margin-bottom: 6px;
   }
   .flag {
-    margin-top: 16px;
+    padding-top: 25px;
   }
-  .flag-btn:not(:last-child) {
+  .flag-item-btn:not(:last-child) {
     margin-right: 31px;
   }
   .catalog-left-block {
@@ -867,7 +867,7 @@
   }
   .event__top-text-item {
     padding-right: 20px;
-    margin-top: 11px;
+    padding-top: 11px;
   }
   .event-block {
     padding-left: 35px;
@@ -885,7 +885,7 @@
   }
   .publish__top-btn {
     margin-bottom: 25px;
-    margin-top: 64px;
+    padding-top: 64px;
   }
   .button-prev-publish {
     margin-left: -10px;
@@ -904,11 +904,13 @@
   }
   .publishing-container {
     padding-bottom: 80px;
-    padding-top: 55px;
+    padding-top: 82px;
+  }
+  .projects-title {
+    margin-bottom: 16px;
   }
   .projects-text {
     width: 100%;
-    margin-top: 16px;
   }
   .br-project {
     display: none;
@@ -956,8 +958,8 @@
     width: 60px;
     height: 60px;
   }
-  .contacts-form-button {
-    margin-top: 25px;
+  .footer-input-2 {
+    margin-bottom: 25px;
   }
 }
 
@@ -997,7 +999,7 @@
     height: 286px;
   }
   .gallery-block {
-    margin-top: 16px;
+    padding-top: 16px;
   }
   .catalog-block {
     flex-direction: column-reverse;
@@ -1012,7 +1014,7 @@
   }
   .catalog-left-block-language {
     width: 100%;
-    margin-top: 50px;
+    padding-top: 50px;
   }
   .img-hudojnik {
     width: 100%;
@@ -1029,7 +1031,7 @@
   }
   .catalog-left-block {
     width: 100%;
-    margin-top: 50px;
+    padding-top: 50px;
   }
   .gallery__block {
     width: 42%;
@@ -1052,8 +1054,8 @@
   .event__item:nth-of-type(-n+1) {
     margin-right: 30px;
   }
-  .event-more-btn {
-    margin-top: 31px;
+  .event__list {
+    margin-bottom: 31px;
   }
   .event__btn {
     margin-bottom: 49px;
@@ -1066,7 +1068,7 @@
     padding-bottom: 79px;
   }
   .publishing-container {
-    padding-top: 59px;
+    padding-top: 86px;
     flex-direction: column;
   }
   .publishing__block {
@@ -1123,7 +1125,7 @@
     max-width: 620px;
   }
   .publish__top-btn {
-    margin-top: 55px;
+    padding-top: 55px;
     width: 20%;
   }
   .publishing-container {
@@ -1132,9 +1134,11 @@
   .project-container {
     padding-top: 80px;
   }
+  .projects-title {
+    margin-bottom: 16px;
+  }
   .projects-text {
     width: 99%;
-    margin-top: 16px;
     margin-bottom: 25px;
   }
   .proyect__part {
@@ -1331,10 +1335,10 @@
     height: 339px !important;
   }
   .catalog-left-block {
-    margin-top: 50px;
+    padding-top: 50px;
   }
-  .text-left-catalog {
-    margin-top: 8px;
+  .placeholder-left-catalog {
+    margin-bottom: 8px;
   }
   .catalog-container {
     padding-bottom: 67px;
@@ -1351,7 +1355,7 @@
   }
   .event__top-text-item {
     padding-right: 15px;
-    margin-top: 16px;
+    padding-top: 16px;
   }
   .event__item:nth-of-type(n+3) {
     display: none;
@@ -1365,8 +1369,8 @@
   .event__btn {
     margin-bottom: 48px;
   }
-  .event-more-btn {
-    margin-top: 31px;
+  .event__list{
+    margin-bottom: 41px;
   }
   .event-block {
     padding-left: 33px;
@@ -1378,7 +1382,7 @@
   .publishing-container {
     display: flex;
     flex-direction: column;
-    padding-top: 72px;
+    padding-top: 99px;
     padding-bottom: 70px;
   }
   .publishing__block {
@@ -1445,7 +1449,7 @@
   }
   .publish__top-btn {
     width: 19%;
-    margin-top: 54px;
+    padding-top: 54px;
   }
   .swiper-slide .publish__img {
     max-height: 500px;
@@ -1498,14 +1502,14 @@
     padding-left: 15px;
     bottom: -50px;
   }
-  .item__nav__list {
+  .header-nav__list {
     margin: 0;
     margin-bottom: 7px;
   }
   .list__link {
     font-size: 16px;
   }
-  .list__item {
+  .header-nav__item {
     line-height: 34px;
   }
   .header__nav {
@@ -1566,14 +1570,16 @@
     padding-top: 58px;
     padding-bottom: 41px;
   }
-  h2 {
+  .title {
     font-size: 28px;
     line-height: 30px;
+  }
+  .about-title {
+    margin-bottom: 34px;
   }
   .text-about {
     font-size: 14px;
     line-height: 28px;
-    margin-top: 16px;
   }
   .gallery_container {
     padding-top: 55px;
@@ -1607,8 +1613,8 @@
     border: none;
     max-width: 500px;
   }
-  .gallery__item:nth-child(n+10) {
-    margin-top: 0px !important;
+  .gallery__item:nth-child(-n+9) {
+    margin-bottom: 0px !important;
   }
   .gallery__img:not(:last-child) {
     margin-bottom: 0px;
@@ -1676,11 +1682,11 @@
   .img-left-catalog {
     margin-bottom: 17px;
   }
-  .placeholder-left-catalog {
-    margin-top: 14px;
+  .small-tittle-catalog {
+    margin-bottom: 14px;
   }
-  .text-left-catalog {
-    margin-top: 6px;
+  .placeholder-left-catalog {
+    margin-bottom: 6px;
   }
   .event-container {
     padding-bottom: 38px;
@@ -1721,7 +1727,7 @@
     min-height: 170px;
   }
   .event__top-text-item {
-    margin-top: 10px;
+    padding-top: 10px;
   }
   .swiper-pagination-bullets {
     margin-top: 24px;
@@ -1754,7 +1760,7 @@
     font-size: 17px;
     font-weight: normal;
   }
-  h3 {
+  .small-tittle {
     font-size: 23px;
     font-weight: bold;
   }
@@ -1894,7 +1900,7 @@
     display: none;
   }
   .publishing-container {
-    padding-top: 10px;
+    padding-top: 37px;
     padding-bottom: 2px;
   }
   .publishing__title {
@@ -1944,12 +1950,13 @@
   }
   .project-container {
     padding-top: 37px;
+    padding-bottom: 54px;
   }
   .projects-title {
     font-size: 28px;
+    margin-bottom: -2px;
   }
   .projects-text {
-    margin-top: -2px;
     width: 100%;
     margin-bottom: 10px;
   }
@@ -1961,7 +1968,6 @@
     max-width: 380px;
   }
   .contacts-box {
-    margin-top: 54px;
     margin-bottom: 27px;
   }
   .contacts-total-block {
@@ -2116,12 +2122,14 @@
     padding-left: 27px;
     padding-right: 20px;
   }
+  .event__book-titles {
+    margin-bottom: 31px;
+  }
   .event__bottom-text-item {
-    margin-top: 31px;
+    margin-bottom: 65px;
   }
   .event__btn {
     margin-bottom: 17px;
-    margin-top: 65px;
   }
   .swiper-pagination-bullets {
     margin-top: 14px;
@@ -2129,12 +2137,12 @@
   .sliderpro .swiper-container {
     max-width: 200px;
   }
-  .flag-btn {
+  .flag-item-btn {
     width: 32px;
     height: 32px;
     background-size: cover;
   }
-  .flag-btn:not(:last-child) {
+  .flag-item-btn:not(:last-child) {
     margin-right: 0;
   }
   .slide-project img {
@@ -2147,8 +2155,8 @@
   .button-project-next {
     margin-top: -32px;
   }
-  .contacts-box {
-    margin-top: 16px;
+  .project-container {
+    padding-bottom: 16px;
   }
   .logo-footer {
     width: 33%;
