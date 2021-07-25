@@ -200,7 +200,7 @@ input[type="search"]::-moz-placeholder {
   font-size: 18px;
   padding-left: 6px;
   padding-right: 6px;
-  transition: color .5s ease-in-out;
+  transition: color .2s ease-in-out;
 }
 
 .list__link:hover {
@@ -375,7 +375,7 @@ input[type="search"]::-moz-placeholder {
   background: rgba(0, 0, 0, 0.4);
 }
 
-.header-container_bottom {
+.header-bottom-container {
   display: flex;
   justify-content: space-between;
   padding-top: 23px;
@@ -1159,6 +1159,10 @@ input[type="search"]::-moz-placeholder {
   transition: border .5s ease-in-out;
 }
 
+.gallery-link:focus {
+  outline: 2px solid #7943A4;
+}
+
 .gallery-link:hover {
   border-bottom: 1px solid #9D5CD0;
 }
@@ -1181,6 +1185,10 @@ input[type="search"]::-moz-placeholder {
 .filter {
   position: relative;
   transition: background .3s ease-in-out;
+}
+
+.filter:active {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .filter:focus {
@@ -1224,6 +1232,10 @@ input[type="search"]::-moz-placeholder {
 
 .filter__selected--active {
   transform: rotate(180deg);
+}
+
+.filter__item:active {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .filter__list {
@@ -1576,6 +1588,8 @@ input[type="search"]::-moz-placeholder {
   height: 100%;
   outline-offset: 0;
   transition: border .5s ease-in-out;
+  padding: 0;
+  border: none;
 }
 
 .gallery__list-img:hover.gallery__list-img::before {
@@ -1821,11 +1835,11 @@ input[type="search"]::-moz-placeholder {
 }
 
 .catalog-left-block-language {
-  width: 40%;
+  width: 47%;
 }
 
 .accordions {
-  width: 60%;
+  width: 53%;
   padding-left: 47px;
 }
 
@@ -1915,6 +1929,7 @@ input[type="search"]::-moz-placeholder {
 }
 
 .catalog-right-heading {
+  /* border-top: 1px solid #CACACA; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1942,14 +1957,45 @@ input[type="search"]::-moz-placeholder {
   display: none;
 }
 
+.ui-corner-all, .ui-corner-top, .ui-corner-right, .ui-corner-tr {
+  border-top-right-radius: 0 !important;
+  border-top-left-radius: 0 !important;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
 .questions-content-heading {
-  border-top: 1px solid #CACACA;
+  /* border-bottom: 1px solid #CACACA; */
   cursor: pointer;
   position: relative;
   transition: border-color .5s ease-in-out;
 }
 
-.questions-content-heading:after {
+.catalog-right-heading:first-child {
+  border-top: 1px solid #CACACA;
+}
+
+.ui-accordion-header-active {
+  border-top-color: #7943A4 !important;
+}
+
+.ui-accordion-header-active .catalog-right-btn {
+  background-color: #D1A9F0;
+    border: 2px solid #9D5CD0;
+}
+
+.ui-accordion-header-active {
+   border-color: #7943A4;
+}
+
+.ui-accordion-header-active .questions-content-heading {
+  border-top: none;
+}
+
+/* .questions-content-heading:after {
   content: "";
   position: absolute;
   display: block;
@@ -1960,7 +2006,7 @@ input[type="search"]::-moz-placeholder {
   background: transparent;
   z-index: 1;
   transition: background .5s ease-in-out;
-}
+} */
 
 .questions-content-heading:hover:after {
   background-color: #9D5CD0;
@@ -2008,12 +2054,24 @@ input[type="search"]::-moz-placeholder {
   border: 2px solid #9D5CD0;
 }
 
+.ui-accordion-content-active {
+    border-bottom: 1px solid #9D5CD0;
+}
+
 .open-accordion-list {
   padding-top: 25px;
   padding-bottom: 30px;
   border-top: 1px solid #9D5CD0;
-  border-bottom: 1px solid #9D5CD0;
+  /* border-bottom: 1px solid #9D5CD0; */
   column-fill: auto;
+}
+
+.ui-accordion-content-active {
+  z-index: 1;
+}
+
+.catalog-right-heading {
+  z-index: 3;
 }
 
 .catalog-left-block a {
@@ -2038,6 +2096,7 @@ input[type="search"]::-moz-placeholder {
 }
 
 .artist__item {
+  cursor: pointer;
   text-decoration: none;
   font-style: normal;
   font-weight: normal;
@@ -2047,19 +2106,19 @@ input[type="search"]::-moz-placeholder {
   background: transparent;
   border: transparent;
   padding: 0;
-  transition: color .5s ease-in-out;
+  transition: color .1s ease-in-out;
 }
 
 .artist__item:focus:not(:active), .artist__item:focus:not(:hover) {
   background-color: #9D5CD0;
   color: #ffffff;
-  transition: background .5s ease-in-out;
+  /* transition: background .1s ease-in-out; */
 }
 
 .artist__item:hover {
   color: #9D5CD0;
   border-bottom: 1px solid #9D5CD0;
-  transition: border .5s ease-in-out;
+  transition: border .1s ease-in-out;
 }
 
 .artist__item:active {
@@ -2076,6 +2135,10 @@ input[type="search"]::-moz-placeholder {
 .artist-lorem img {
   border: 2px solid #B7B7B7;
   padding: 12px;
+}
+
+.img-hudojnik {
+  width: 100%;
 }
 
 .artist__list {
@@ -2132,7 +2195,7 @@ input[type="search"]::-moz-placeholder {
 
 .event__item:nth-of-type(n+4) {
   display: none;
-  margin-right: 56px;
+  margin-right: 51px;
 }
 
 .event-container {
