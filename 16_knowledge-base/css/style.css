@@ -362,7 +362,7 @@ input[type="search"]::-moz-placeholder {
   fill: white;
 }
 
-.menu__list_bottom {
+.menu-bottom-list {
   display: flex;
   position: absolute;
   margin: 0;
@@ -1402,6 +1402,7 @@ input[type="search"]::-moz-placeholder {
   transform: rotate( 90deg);
   outline: none;
   z-index: 25;
+  border: 2px solid transparent;
   transition: background-color 0.5s ease-in-out;
 }
 
@@ -1476,6 +1477,7 @@ input[type="search"]::-moz-placeholder {
   background-position: center;
   transform: rotate( -90deg);
   outline: none;
+  border: 2px solid transparent;
   transition: background-color 0.5s ease-in-out;
 }
 
@@ -1582,6 +1584,7 @@ input[type="search"]::-moz-placeholder {
 }
 
 .gallery__list-img {
+  cursor: pointer;
   position: relative;
   display: inline-block;
   width: 100%;
@@ -1589,7 +1592,8 @@ input[type="search"]::-moz-placeholder {
   outline-offset: 0;
   transition: border .5s ease-in-out;
   padding: 0;
-  border: none;
+  background: transparent;
+  border: 3px solid transparent;
 }
 
 .gallery__list-img:hover.gallery__list-img::before {
@@ -1772,6 +1776,7 @@ input[type="search"]::-moz-placeholder {
   transition: background-color 0.5s ease-in-out;
   transition-property: transform;
   transition-duration: 500ms;
+
 }
 
 .accordions .ui-state-active .ui-icon-triangle-1-s {
@@ -1793,12 +1798,29 @@ input[type="search"]::-moz-placeholder {
   transition: color .5s ease-in-out;
 }
 
-.accordions .catalog-right-heading:active {
+/* .catalog-right-heading:focus {
   border-color: #7943A4;
+  border-bottom: 1px solid #7943A4;
 }
 
-.accordions .catalog-right-heading:hover {
+.catalog-right-heading:focus .catalog-right-header {
+  background-color: #9D5CD0;
+  color: #FFFFFF;
+}
+
+.catalog-right-heading:focus .catalog-right-btn {
+  background-color: #D1A9F0;
+  border: 2px solid #9D5CD0;
+} */
+
+.catalog-right-heading:active {
+  border-color: #7943A4;
+  border-bottom: 1px solid #7943A4;
+}
+
+.catalog-right-heading:hover {
   border-color: #9D5CD0;
+  border-bottom: 1px solid #9D5CD0;
 }
 
 .accordions .open-accordion-list::after {
@@ -1974,7 +1996,7 @@ input[type="search"]::-moz-placeholder {
   transition: border-color .5s ease-in-out;
 }
 
-.catalog-right-heading:first-child {
+.catalog-right-heading {
   border-top: 1px solid #CACACA;
 }
 
@@ -1985,6 +2007,15 @@ input[type="search"]::-moz-placeholder {
 .ui-accordion-header-active .catalog-right-btn {
   background-color: #D1A9F0;
     border: 2px solid #9D5CD0;
+}
+
+.accordions .ui-accordion-header-active .ui-accordion-header-icon {
+  border: 2px solid #9D5CD0;
+  background-color: #D1A9F0;
+}
+
+.accordion-question-content-heading span {
+  display: none;
 }
 
 .ui-accordion-header-active {
@@ -2008,12 +2039,16 @@ input[type="search"]::-moz-placeholder {
   transition: background .5s ease-in-out;
 } */
 
-.questions-content-heading:hover:after {
-  background-color: #9D5CD0;
+
+
+.questions-content-heading:hover .catalog-right-heading {
+  border-color: #9D5CD0;
+  border-bottom: 1px solid #9D5CD0;
 }
 
-.questions-content-heading:hover {
-  border-color: #9D5CD0;
+.questions-content-heading:focus .catalog-right-heading {
+  border-color: #7943A4;
+  border-bottom: 1px solid #7943A4;
 }
 
 .questions-content-heading:focus:not(:active) .catalog-right-header, .questions-content-heading:focus:not(:hover) .catalog-right-header {
@@ -2029,8 +2064,9 @@ input[type="search"]::-moz-placeholder {
   background-color: #7943A4;
 }
 
-.questions-content-heading:active {
+.questions-content-heading:active .catalog-right-heading {
   border-color: #7943A4;
+  border-bottom: 1px solid #7943A4;
 }
 
 .questions-content-heading:last-child {
@@ -2164,19 +2200,17 @@ input[type="search"]::-moz-placeholder {
   line-height: 65px;
   font-weight: normal;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: 0px;
 }
 
 .event__list {
-  display: flex;
-  /* justify-content: space-between; */
-  padding: 0;
-  margin: 0;
   flex-wrap: wrap;
+  margin-bottom: 0;
 }
 
 .event__list-swapper {
-  display: none;
+  overflow: hidden;
+  width: 100%;
 }
 
 .event__item {
@@ -2187,6 +2221,11 @@ input[type="search"]::-moz-placeholder {
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
+}
+
+.pagination-event {
+  display: none;
 }
 
 .event__item:nth-of-type(-n+2) {
@@ -2839,7 +2878,7 @@ nav-not-slider {
 
 .contacts-form-block {
   width: 35.5%;
-  padding-top: 120px;
+  padding-top: 123px;
   padding-bottom: 121px;
   padding-left: 160px;
   padding-right: 120px;

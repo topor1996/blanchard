@@ -136,21 +136,58 @@ window.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.design-item').style.display = 'none';
         document.querySelector('#acc-design-checkbox').checked = false;
       }
-    });
-    var swiper = new Swiper(".event__list-swapper", {
-      slidesPerView: 1,
-      spaceBetween: 10,
-      pagination: {
-        el: ".swiper-pagination"
+    }); // (function () {
+    //   [].slice.call(document.querySelectorAll('select.cs-select')).forEach(function (el) {
+    //     new SelectFx(el);
+    //   });
+    // });
+
+    var slider = document.querySelector('.event__list-swapper'); // let mySwiper = new Swiper(slider, {
+    // 	slidesPerView: 3,
+    // 	spaceBetween: 10,
+    // 	loop: true,
+    // 	pagination: {
+    // 		el: '.swiper-pagination',
+    // 		clickable: true,
+    // 	},
+    // 	navigation: {
+    // 		nextEl: '.swiper-button-next',
+    // 		prevEl: '.swiper-button-prev',
+    // 	},
+    // })
+
+    var mySwiper;
+
+    function mobileSlider() {
+      if (window.innerWidth <= 500 && slider.dataset.mobile == 'false') {
+        mySwiper = new Swiper(slider, {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          pagination: {
+            el: ".swiper-pagination"
+          },
+          slideClass: 'event__item' // pagination: {
+          // 	el: '.swiper-pagination',
+          // 	clickable: true,
+          // },
+
+        });
+        slider.dataset.mobile = 'true';
       }
+
+      if (window.innerWidth > 500) {
+        slider.dataset.mobile = 'false';
+
+        if (slider.classList.contains('swiper-container-initialized')) {
+          mySwiper.destroy();
+        }
+      }
+    }
+
+    mobileSlider();
+    window.addEventListener('resize', function () {
+      mobileSlider();
     });
-
-    (function () {
-      [].slice.call(document.querySelectorAll('select.cs-select')).forEach(function (el) {
-        new SelectFx(el);
-      });
-    })();
-
     var swiper = new Swiper(".gallery-slider", {
       slidesPerView: 3,
       slidesPerColumn: 2,
