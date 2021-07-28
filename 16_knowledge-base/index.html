@@ -306,14 +306,14 @@
                 xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 1L6 6L0.999998 1" stroke="white" />
               </svg>
-              <select class="filter__select" id="gallery__filter" name="gallery__filter">
-                <option class="filter__option" value="Автор">
+              <select class="filter__select" id="gallery__filter" name="gallery__filter" tabindex="0">
+                <option class="filter__option" value="Автор" tabindex="-1">
                   Живопись
                 </option>
-                <option class="filter__option" value="Направление">
+                <option class="filter__option" value="Направление" tabindex="-1">
                   Рисунок
                 </option>
-                <option class="filter__option" value="Техника">
+                <option class="filter__option" value="Техника" tabindex="-1">
                   Скульптура
                 </option>
               </select>
@@ -335,7 +335,7 @@
               <span class="slider-nav__fraction gallery__fraction">N / N</span>
             </div> -->
           <div class="navigation-gallery-slider">
-            <div class="swiper-button-prev gallery-button-prev">
+            <div class="swiper-button-prev gallery-button-prev" tabindex="0">
             </div>
             <div class="swiper-pagination swiper-pagination-gallery"></div>
             <div class="swiper-button-next gallery-button-next">
@@ -1584,7 +1584,7 @@
   <script src="js/simplebar.min.js"></script>
   <script src="js/inputmask.min.js"></script>
   <script src="js/just-validate.min.js"></script>
-  <!-- <script src="js/mobileslider.js"></script> -->
+
 
   <script src="js/index.js"></script>
   <script src="js/script.js"></script>

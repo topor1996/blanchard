@@ -514,7 +514,14 @@ new JustValidate('.footer-form', {
 //   });
 
 // });
-
+$('.filter__option').prop('tabIndex', 0);
+$('.swiper-button-disabled').prop('tabIndex', 0);
+$(document).ready(function(){
+  $('.gallery__filter').keypress(function(e){
+    if(e.keyCode==13)
+    $('.filter__selected').click();
+  });
+});
   });
   });
 
