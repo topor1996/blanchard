@@ -1308,6 +1308,9 @@
     top: 0px;
     left: 0px;
   }
+  .is-active {
+    background: #666666 !important;
+  }
   .search-close-button--appear>svg {
     width: 16px;
     height: 16px;
