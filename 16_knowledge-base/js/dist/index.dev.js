@@ -473,6 +473,12 @@ window.addEventListener('DOMContentLoaded', function () {
     //   });
     // });
 
+    var element = document.querySelector('#gallery__filter');
+    var choices = new Choices(element, {
+      itemSelectText: '',
+      renderSelectedChoices: '',
+      searchEnabled: false
+    });
     $('.filter__option').prop('tabIndex', 0);
     $('.swiper-button-disabled').prop('tabIndex', 0);
     $(document).ready(function () {

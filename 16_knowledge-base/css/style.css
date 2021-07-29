@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'Open Sans';
-  src: url('../fonts/OpenSans-Italic.woff') format('woff'),
-      url('../fonts/OpenSans-Italic.woff2') format('woff2');
+  src: url('../fonts/OpenSans-Italic.woff') format('woff'), url('../fonts/OpenSans-Italic.woff2') format('woff2');
   font-display: swap;
   font-style: italic;
   font-weight: 300;
@@ -9,8 +8,7 @@
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('../fonts/OpenSans-Regular.woff') format('woff'),
-      url('..fonts/OpenSans-Regular.woff2') format('woff2');
+  src: url('../fonts/OpenSans-Regular.woff') format('woff'), url('..fonts/OpenSans-Regular.woff2') format('woff2');
   font-display: swap;
   font-style: normal;
   font-weight: 400;
@@ -18,8 +16,7 @@
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('../fonts/OpenSans-SemiBold.woff') format('woff'),
-      url('..fonts/OpenSans-SemiBold.woff2') format('woff2');
+  src: url('../fonts/OpenSans-SemiBold.woff') format('woff'), url('..fonts/OpenSans-SemiBold.woff2') format('woff2');
   font-display: swap;
   font-style: normal;
   font-weight: 600;
@@ -27,8 +24,7 @@
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('../fonts/OpenSans-Bold.woff') format('woff'),
-      url('..fonts/OpenSans-Bold.woff2') format('woff2');
+  src: url('../fonts/OpenSans-Bold.woff') format('woff'), url('..fonts/OpenSans-Bold.woff2') format('woff2');
   font-display: swap;
   font-style: normal;
   font-weight: 700;
@@ -36,8 +32,7 @@
 
 @font-face {
   font-family: 'Open Sans';
-  src: url('../fonts/OpenSans-ExtraBold.woff') format('woff'),
-      url('..fonts/OpenSans-ExtraBold.woff2') format('woff2');
+  src: url('../fonts/OpenSans-ExtraBold.woff') format('woff'), url('..fonts/OpenSans-ExtraBold.woff2') format('woff2');
   font-display: swap;
   font-style: normal;
   font-weight: 800;
@@ -731,16 +726,119 @@ input[type="search"]::-moz-placeholder {
 }
 
 .select {
-  display: none;
+  /* display: none; */
   font-size: 16px;
   color: #fff;
-  width: 185px;
   height: 20px;
 }
 
 .bottom-list-item {
   position: relative;
   margin-right: 84px;
+}
+
+.is-selected {
+  display: none !important;
+}
+
+.choices__inner {
+  display: flex !important;
+  justify-content: space-between;
+  background-color: transparent !important;
+  align-items: center;
+  border: 1px solid #FFFFFF !important;
+  border-radius: 6px !important;
+  padding: 0 13px !important;
+  padding-bottom: 2px !important;
+  height: 40px;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: border .3s ease-in-out, color .3s ease-in-out;
+  min-height: 43px !important;
+}
+
+.choices__list--single {
+  padding: 0 !important;
+}
+
+.choices__list--single .choices__item {
+  font-size: 16px !important;
+}
+
+.choices__list--dropdown {
+  top: 99% !important;
+  display: block;
+  margin: 0 !important;
+  background-color: transparent !important;
+  border: 1px solid #999999 !important;
+  border-top: none !important;
+  border-radius: 6px !important;
+  padding: 0;
+  width: 100% !important;
+  list-style: none !important;
+  visibility: visible !important;
+  opacity: 1;
+  overflow: hidden !important;
+  transition: opacity .3s ease-in-out;
+}
+
+.choices__list--dropdown .choices__item {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding-bottom: 10px !important;
+  padding-left: 19px !important;
+  font-size: 16px !important;
+  color: #999999;
+  cursor: pointer !important;
+  transition: background .5s ease-in-out;
+  transition: color .5s ease-in-out;
+}
+
+.choices {
+  transition: background .3s ease-in-out;
+}
+
+.is-focused {
+  background: transparent !important;
+}
+
+.choices:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.choices:focus {
+  background: rgba(255, 255, 255, 0.2);
+}
+.choices:active {
+background: rgba(255, 255, 255, 0.2);
+}
+
+.is-highlighted {
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.2) !important;
+}
+
+.choices[data-type*=select-one]:after {
+  background: url('/img/galka.svg') center center;
+  width: 12px !important;
+  height: 7px !important;
+  background-repeat: no-repeat;
+  border: none !important;
+  transition: transform .3s ease-in-out;
+  margin-top: 0 !important;
+  right: 16px !important;
+}
+
+.choices[data-type*=select-one].is-open:after {
+  transform: rotate(180deg);
+  margin: 0 !important;
+  transition: transform .3s ease-in-out;
+}
+
+.choices__item:not(:last-child) {
+  border-bottom: 1px solid #999999;
 }
 
 .select-styled {
@@ -1182,119 +1280,6 @@ input[type="search"]::-moz-placeholder {
   line-height: 32px;
 }
 
-.filter {
-  position: relative;
-  transition: background .3s ease-in-out;
-}
-
-.filter:active {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.filter:focus {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.filter__select {
-  display: none;
-}
-
-.filter__selected {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 1px solid #FFFFFF;
-  border-radius: 6px;
-  padding: 0 14px;
-  padding-bottom: 2px;
-  height: 40px;
-  color: #FFFFFF;
-  cursor: pointer;
-  transition: border .3s ease-in-out, color .3s ease-in-out;
-}
-
-.filter__selected:hover, .filter__selected:focus {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.filter__icon {
-  position: absolute;
-  top: 21px;
-  right: 16px;
-  transition: transform .15s linear;
-}
-
-.filter__icon--active {
-  transform: rotate(180deg);
-}
-
-.filter__selected--active {
-  transform: rotate(180deg);
-}
-
-.filter__item:active {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.filter__list {
-  position: absolute;
-  top: 99%;
-  display: block;
-  margin: 0;
-  border: 1px solid #999999;
-  border-top: none;
-  border-radius: 6px;
-  padding: 0;
-  width: 100%;
-  list-style: none;
-  visibility: visible;
-  opacity: 1;
-  overflow: hidden;
-  transition: opacity .3s ease-in-out;
-}
-
-.filter__list:focus {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.filter__list--hidden {
-  display: none;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity .3s ease-in-out;
-}
-
-.filter__item:not(:last-child) {
-  border-bottom: 1px solid #999999;
-}
-
-.filter__item {
-  display: flex;
-  align-items: center;
-  height: 40px;
-  padding-bottom: 2px;
-  padding-left: 19px;
-  font-size: 16px;
-  color: #999999;
-  cursor: pointer;
-  transition: background .5s ease-in-out;
-  transition: color .5s ease-in-out;
-}
-
-.filter__item:hover {
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.filter__item:focus {
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.filter__item--selected {
-  display: none;
-}
 
 .gallery__tittle {
   margin: 0;
@@ -1411,7 +1396,6 @@ input[type="search"]::-moz-placeholder {
   z-index: 25;
   border: 2px solid transparent;
   transition: background-color 0.5s ease-in-out;
-
 }
 
 /* .swiper-button-disabled {
@@ -1423,11 +1407,11 @@ input[type="search"]::-moz-placeholder {
 }
 
 .swiper-button-prev:focus:not(:active), .swiper-button-prev:focus:not(:hover) {
-  border-color:  #9D5CD0;
+  border-color: #9D5CD0;
 }
 
 .swiper-button-next:focus:not(:active), .swiper-button-next:focus:not(:hover) {
-  border-color:  #9D5CD0;
+  border-color: #9D5CD0;
 }
 
 .swiper-button-next:hover {
@@ -1787,7 +1771,6 @@ input[type="search"]::-moz-placeholder {
   transition: background-color 0.5s ease-in-out;
   transition-property: transform;
   transition-duration: 500ms;
-
 }
 
 .accordions .ui-state-active .ui-icon-triangle-1-s {
@@ -2017,7 +2000,7 @@ input[type="search"]::-moz-placeholder {
 
 .ui-accordion-header-active .catalog-right-btn {
   background-color: #D1A9F0;
-    border: 2px solid #9D5CD0;
+  border: 2px solid #9D5CD0;
 }
 
 .accordions .ui-accordion-header-active .ui-accordion-header-icon {
@@ -2030,7 +2013,7 @@ input[type="search"]::-moz-placeholder {
 }
 
 .ui-accordion-header-active {
-   border-color: #7943A4;
+  border-color: #7943A4;
 }
 
 .ui-accordion-header-active .questions-content-heading {
@@ -2049,8 +2032,6 @@ input[type="search"]::-moz-placeholder {
   z-index: 1;
   transition: background .5s ease-in-out;
 } */
-
-
 
 .questions-content-heading:hover .catalog-right-heading {
   border-color: #9D5CD0;
@@ -2102,7 +2083,7 @@ input[type="search"]::-moz-placeholder {
 }
 
 .ui-accordion-content-active {
-    border-bottom: 1px solid #9D5CD0;
+  border-bottom: 1px solid #9D5CD0;
 }
 
 .open-accordion-list {
@@ -2124,7 +2105,8 @@ input[type="search"]::-moz-placeholder {
 .catalog-left-block a {
   text-decoration: none;
   font-size: 16px;
-  color: #9D5CD0;;
+  color: #9D5CD0;
+  ;
 }
 
 .catalog-firsth-child {
@@ -2877,7 +2859,6 @@ nav-not-slider {
   font-size: 48px;
   line-height: 65px;
 } */
-
 
 .contacts-container {
   margin-bottom: 17px;

@@ -514,6 +514,12 @@ new JustValidate('.footer-form', {
 //   });
 
 // });
+const element = document.querySelector('#gallery__filter');
+const choices = new Choices(element, {
+  itemSelectText: '',
+  renderSelectedChoices: '',
+  searchEnabled: false
+})
 $('.filter__option').prop('tabIndex', 0);
 $('.swiper-button-disabled').prop('tabIndex', 0);
 $(document).ready(function(){
