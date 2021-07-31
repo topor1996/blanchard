@@ -83,10 +83,10 @@ window.addEventListener('DOMContentLoaded', function () {
 
     /* ACCORDION TABS */
 
-    document.querySelectorAll('.artist').forEach(function (tabsBtn) {
+    document.querySelectorAll('.artist__item').forEach(function (tabsBtn) {
       tabsBtn.addEventListener('click', function (event) {
         var tab = event.currentTarget.dataset.tab;
-        document.querySelectorAll('.artist').forEach(function (link) {
+        document.querySelectorAll('.artist__item').forEach(function (link) {
           link.classList.remove('artist_active');
         });
         tabsBtn.classList.add('artist_active');
@@ -399,7 +399,7 @@ window.addEventListener('DOMContentLoaded', function () {
       });
       var myPlacemark = new ymaps.Placemark([55.758468, 37.601088], {}, {
         iconLayout: 'default#image',
-        iconImageHref: '/img/metka.svg',
+        iconImageHref: '/img/mark.svg',
         iconImageSize: [30, 42],
         iconImageOffset: [-3, -42]
       }); // Размещение геообъекта на карте.
@@ -480,7 +480,9 @@ window.addEventListener('DOMContentLoaded', function () {
       searchEnabled: false
     });
     $('.filter__option').prop('tabIndex', 0);
-    $('.swiper-button-disabled').prop('tabIndex', 0);
+    $('.choices__inner').prop('tabIndex', 0);
+    $('.choices').prop('tabIndex', -1);
+    $('.catalog-right-heading').prop('tabIndex', 0);
     $(document).ready(function () {
       $('.gallery__filter').keypress(function (e) {
         if (e.keyCode == 13) $('.filter__selected').click();
