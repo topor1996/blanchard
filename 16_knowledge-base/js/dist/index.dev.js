@@ -90,10 +90,10 @@ window.addEventListener('DOMContentLoaded', function () {
           link.classList.remove('artist_active');
         });
         tabsBtn.classList.add('artist_active');
-        document.querySelectorAll('.catalog-left-block').forEach(function (tabContent) {
-          tabContent.classList.remove('catalog-left-block_active');
+        document.querySelectorAll('.catalog-block-left').forEach(function (tabContent) {
+          tabContent.classList.remove('catalog-block-left_active');
         });
-        document.querySelector("[data-content=\"".concat(tab, "\"]")).classList.add('catalog-left-block_active');
+        document.querySelector("[data-content=\"".concat(tab, "\"]")).classList.add('catalog-block-left_active');
       });
     });
     document.querySelectorAll('.editions-accordion__checkbox').forEach(function (item) {
@@ -399,7 +399,7 @@ window.addEventListener('DOMContentLoaded', function () {
       });
       var myPlacemark = new ymaps.Placemark([55.758468, 37.601088], {}, {
         iconLayout: 'default#image',
-        iconImageHref: '/img/mark.svg',
+        iconImageHref: '../img/mark.svg',
         iconImageSize: [30, 42],
         iconImageOffset: [-3, -42]
       }); // Размещение геообъекта на карте.
