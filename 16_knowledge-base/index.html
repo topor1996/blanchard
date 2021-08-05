@@ -423,10 +423,10 @@
     <section class="catalog" id="catalog">
       <div class="container catalog-container">
         <div class="top-catalog">
-          <h2 class="title catalog-tittle">
+          <h2 class="title catalog-title">
             Каталог
           </h2>
-          <ul class="flag">
+          <ul class="flag__list">
             <li class="flag-item"><button class="flag-item-btn france" data-tab="four"></button></li>
             <li class="flag-item"><button class="flag-item-btn germany" data-tab="four"></button></li>
             <li class="flag-item"><button class="flag-item-btn italy" data-tab="four"></button></li>
@@ -436,7 +436,7 @@
           </ul>
         </div>
 
-        <div class="language language_active english" data-content="five">
+        <div class="language language_active english language-catalog" data-content="five">
           <p class="catalog-text">
             Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа
             политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. Являясь всего лишь
@@ -913,7 +913,7 @@
             Издания
           </h2>
 
-          <div id="editions-accordion">
+          <!-- <div id="editions-accordion">
             <h3 class="small-tittle">Категории</h3>
             <div>
               <div class="editions-categories__item">
@@ -1112,89 +1112,106 @@
               </label>
               <button class="box-item__remover"></button>
             </div>
-          </div>
+          </div> -->
 
 
-          <div class="publish-desktop">
+          <div id="editions-accordion" class="publish-desktop" >
             <h3 class="small-tittle publishing__check-title">Категории</h3>
             <div class="label-publish__check">
               <label class="publish__check publish__option publish-label-1">
                 <input type="checkbox" class="publish__check-input">
                 <span class="publish__check-box"></span>
-                <span class="publish__items" tabindex="0">Бестселлеры</span>
+                <span class="publish__items" >Бестселлеры</span>
 
               </label>
+
               <label class="publish__check publish__option publish-label-2">
                 <input type="checkbox" class="publish__check-input">
                 <span class="publish__check-box"></span>
-                <span class="publish__items" tabindex="0">Искусство</span>
+                <span class="publish__items" >Искусство</span>
 
               </label>
+
               <label class="publish__check publish__option publish-label-3">
                 <input type="checkbox" class="publish__check-input">
                 <span class="publish__check-box"></span>
-                <span class="publish__items" tabindex="0">Архитектура</span>
+                <span class="publish__items" >Архитектура</span>
 
               </label>
-              <label class="publish__check publish__option publish-label-4">
+
+              <label class="publish__check publish__option publish-label-4 publish__check-active">
                 <input type="checkbox" checked="" class="publish__check-input">
                 <span class="publish__check-box"></span>
-                <span class="publish__items" tabindex="0">Дизайн</span>
+                <span class="publish__items" >Дизайн</span>
 
               </label>
+
               <label class="publish__check publish__option publish-label-5">
                 <input type="checkbox" class="publish__check-input">
                 <span class="publish__check-box"></span>
-                <span class="publish__items" tabindex="0">Мода</span>
+                <span class="publish__items" >Мода</span>
 
               </label>
+
               <label class="publish__check publish__option publish-label-6">
                 <input type="checkbox" class="publish__check-input">
                 <span class="publish__check-box"></span>
-                <span class="publish__items" tabindex="0">Детям</span>
+                <span class="publish__items">Детям</span>
 
               </label>
+
               <label class="publish__check publish__option publish-label-7">
                 <input type="checkbox" class="publish__check-input">
                 <span class="publish__check-box"></span>
-                <span class="publish__items" tabindex="0">Художественная литература</span>
+                <span class="publish__items" >Художественная литература</span>
 
               </label>
+
               <label class="publish__check publish__option publish-label-8">
                 <input type="checkbox" class="publish__check-input">
                 <span class="publish__check-box"></span>
-                <span class="publish__items" tabindex="0">Публицистика</span>
+                <span class="publish__items" >Публицистика</span>
 
               </label>
+
               <label class="publish__check publish__option publish-label-9">
                 <input type="checkbox" class="publish__check-input">
                 <span class="publish__check-box"></span>
-                <span class="publish__items" tabindex="0">Путеводители</span>
+                <span class="publish__items" >Путеводители</span>
 
               </label>
+
+
               <label class="publish__check publish__option publish-label-10">
                 <input type="checkbox" class="publish__check-input">
                 <span class="publish__check-box"></span>
-                <span class="publish__items" tabindex="0">Философия</span>
+                <span class="publish__items" >Философия</span>
 
               </label>
+
               <label class="publish__check publish__option publish-label-11">
                 <input type="checkbox" class="publish__check-input">
                 <span class="publish__check-box"></span>
-                <span class="publish__items" tabindex="0">Учебная литература</span>
+                <span class="publish__items" >Учебная литература</span>
 
               </label>
+
               <label class="publish__check publish__option publish-label-12">
                 <input type="checkbox" class="publish__check-input">
                 <span class="publish__check-box"></span>
-                <span class="publish__items" tabindex="0">Журналы и газеты</span>
+                <span class="publish__items" >Журналы и газеты</span>
 
               </label>
+
             </div>
+
           </div>
+
+
+
           <div class="publish-form">
             <div class="publish__price-title">Цена</div>
-            <table class="publish__price">
+            <!-- <table class="publish__price">
               <tbody>
                 <tr>
                   <td class="price1">От</td>
@@ -1205,7 +1222,14 @@
                   <td class="price1">руб.</td>
                 </tr>
               </tbody>
-            </table>
+            </table> -->
+            <div class="publish__price">
+              <label for="price-min" class="publish__price-label">От</label>
+              <input id="price-min" class="publish__price-input" type="number" placeholder="50" min="0" step="10">
+              <label for="price-max" class="publish__price-label">до</label>
+              <input id="price-max" class="publish__price-input" type="number" placeholder="25 000" min="10" step="10">
+              <span class="publish__price-label">руб.</span>
+            </div>
           </div>
         </div>
         <div class="publishing-swiper-not-slider">
@@ -1584,9 +1608,10 @@
 
 
   <script src="js/index.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/select.js"></script>
   <script src="js/tabs.js"></script>
   <script src="js/burger.js"></script>
+  <script src="js/checkbox.js"></script>
 
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
 </body>

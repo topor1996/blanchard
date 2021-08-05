@@ -41,11 +41,11 @@ $(function () {
     heightStyle: "content",
   });
 
-  $("#editions-accordion").accordion({
-    collapsible: true,
-    heightStyle: "content",
-    active: 1,
-  });
+  // $("#editions-accordion").accordion({
+  //   collapsible: true,
+  //   heightStyle: "content",
+  //   active: 1,
+  // });
 });
 /* END ACCORDION */
 
@@ -82,11 +82,11 @@ $(function () {
     heightStyle: "content",
   });
 
-  $("#editions-accordion").accordion({
-    collapsible: true,
-    heightStyle: "content",
-    active: 1,
-  });
+  // $("#editions-accordion").accordion({
+  //   collapsible: true,
+  //   heightStyle: "content",
+  //   active: 1,
+  // });
 });
 /* END ACCORDION */
 
@@ -109,48 +109,48 @@ document.querySelectorAll('.artist__item').forEach(function (tabsBtn) {
   });
 });
 
-document.querySelectorAll('.editions-accordion__checkbox').forEach(function (item) {
-  item.addEventListener('change', function () {
-    let dataCheckbox = item.dataset.editionitem;
-    if (item.checked) {
-      document.querySelectorAll('.editions-categories__box-item').forEach(function (boxItem) {
-        if (boxItem.dataset.editionitem === dataCheckbox) {
-          boxItem.style.display = 'block';
-          boxItem.querySelector('input').checked = true;
+// document.querySelectorAll('.editions-accordion__checkbox').forEach(function (item) {
+//   item.addEventListener('change', function () {
+//     let dataCheckbox = item.dataset.editionitem;
+//     if (item.checked) {
+//       document.querySelectorAll('.editions-categories__box-item').forEach(function (boxItem) {
+//         if (boxItem.dataset.editionitem === dataCheckbox) {
+//           boxItem.style.display = 'block';
+//           boxItem.querySelector('input').checked = true;
 
-          boxItem.querySelector('.box-item__remover').addEventListener('click', function () {
-            boxItem.style.display = 'none';
-            if (item.dataset.editionitem === dataCheckbox) {
-              item.checked = false;
-            }
-          })
+//           boxItem.querySelector('.box-item__remover').addEventListener('click', function () {
+//             boxItem.style.display = 'none';
+//             if (item.dataset.editionitem === dataCheckbox) {
+//               item.checked = false;
+//             }
+//           })
 
-          boxItem.querySelector('input').addEventListener('click', function () {
-            if (!this.checked) {
-              boxItem.style.display = 'none';
-              item.checked = false;
-            }
-          })
-        }
-      })
-    } else {
-      document.querySelectorAll('.editions-categories__box-item').forEach(function (boxItem) {
-        if (boxItem.dataset.editionitem === dataCheckbox) {
-          boxItem.style.display = 'none';
-          boxItem.querySelector('input').checked = true;
-        }
-      })
-    }
-  })
-})
+//           boxItem.querySelector('input').addEventListener('click', function () {
+//             if (!this.checked) {
+//               boxItem.style.display = 'none';
+//               item.checked = false;
+//             }
+//           })
+//         }
+//       })
+//     } else {
+//       document.querySelectorAll('.editions-categories__box-item').forEach(function (boxItem) {
+//         if (boxItem.dataset.editionitem === dataCheckbox) {
+//           boxItem.style.display = 'none';
+//           boxItem.querySelector('input').checked = true;
+//         }
+//       })
+//     }
+//   })
+// })
 
-document.querySelector('#acc-design-checkbox').checked = true;
-document.querySelector('#box-design-checkbox').addEventListener('change', function () {
-  if (this.checked === false) {
-    document.querySelector('.design-item').style.display = 'none';
-    document.querySelector('#acc-design-checkbox').checked = false;
-  }
-})
+// document.querySelector('#acc-design-checkbox').checked = true;
+// document.querySelector('#box-design-checkbox').addEventListener('change', function () {
+//   if (this.checked === false) {
+//     document.querySelector('.design-item').style.display = 'none';
+//     document.querySelector('#acc-design-checkbox').checked = false;
+//   }
+// })
 
 // (function () {
 //   [].slice.call(document.querySelectorAll('select.cs-select')).forEach(function (el) {
@@ -427,7 +427,7 @@ function init() {
   });
   var myPlacemark = new ymaps.Placemark([55.758468, 37.601088], {}, {
     iconLayout: 'default#image',
-    iconImageHref: '../img/mark.svg',
+    iconImageHref: 'img/mark.svg',
     iconImageSize: [30, 42],
     iconImageOffset: [-3, -42]
   });
