@@ -155,7 +155,7 @@ input[type="search"]::-moz-placeholder {
   line-height: 65px;
 }
 
-.small-tittle {
+.small-title {
   font-style: normal;
   font-weight: normal;
   font-size: 25px;
@@ -1117,7 +1117,7 @@ input[type="search"]::-moz-placeholder {
   font-weight: bold;
 }
 
-.br-first-tittle {
+.br-first-title {
   display: none;
 }
 
@@ -1413,7 +1413,7 @@ input[type="search"]::-moz-placeholder {
 }
 
 .swiper-button-prev::after {
-  color: #FFFFFF;
+  color: black;
   position: absolute;
   left: 9px;
 }
@@ -1498,7 +1498,7 @@ input[type="search"]::-moz-placeholder {
 }
 
 .swiper-button-next:after {
-  color: #FFFFFF;
+  color: black;
   position: absolute;
   right: 9px;
 }
@@ -1683,7 +1683,7 @@ input[type="search"]::-moz-placeholder {
   padding-top: 9px;
 }
 
-.flag-item-btn {
+.flag__item-btn {
   width: 66px;
   height: 66px;
   background-color: transparent;
@@ -1741,36 +1741,36 @@ input[type="search"]::-moz-placeholder {
   background-position: center center;
 }
 
-.flag-item-btn:focus:not(:active), .flag-item-btn:focus:not(:hover) {
+.flag__item-btn:focus:not(:active), .flag__item-btn:focus:not(:hover) {
   filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
   transition: filter .25s ease-in-out;
 }
 
-.flag-item-btn:hover {
+.flag__item-btn:hover {
   filter: drop-shadow(0px 0px 20px rgba(157, 92, 208, 0.7));
   transition: filter .25s ease-in-out;
 }
 
-.flag-item-btn.selected {
+.flag__item-btn.selected {
   filter: none;
 }
 
-.flag-item-btn:active {
+.flag__item-btn:active {
   border: 2px solid #7943A4;
   border-radius: 50px;
   transition: border .25s ease-in-out;
 }
 
-.flag-item:not(:last-child) {
+.flag__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.flag-item-btn_active {
+.flag__item-btn_active {
   border: 2px solid #7943A4;
   border-radius: 50px;
 }
 
-.flag-item-btn_active .img-flag-btn {
+.flag__item-btn_active .img-flag-btn {
   filter: none !important;
 }
 
@@ -1955,7 +1955,7 @@ input[type="search"]::-moz-placeholder {
   line-height: 32px;
 }
 
-.catalog-block-left__tittle {
+.catalog-block-left__title {
   margin-bottom: 9px;
 }
 
@@ -1975,7 +1975,7 @@ input[type="search"]::-moz-placeholder {
   padding: 2px;
   box-sizing: border-box;
   background-size: 17px;
-  transition: border 0.25s ease-in-out;
+  transition: border 0.25s ease-in-out, background-color 0.25s ease-in-out !important;
   transition-property: transform;
   transition-duration: 500ms;
 }
@@ -2185,13 +2185,12 @@ input[type="search"]::-moz-placeholder {
 
 .questions-content-heading:hover .catalog-right-btn {
   background-color: #D1A9F0;
-  transition: background-color 0.25s ease-in-out;
 }
 
 .questions-content-heading:active .catalog-right-btn {
   background-color: #D1A9F0;
   border: 2px solid #9D5CD0;
-  transition: background-color 0.25s ease-in-out;
+
 }
 
 /* .ui-accordion-content-active {
@@ -2306,7 +2305,7 @@ input[type="search"]::-moz-placeholder {
   padding-bottom: 78px;
 }
 
-.event-tittle {
+.event-title {
   font-size: 48px;
   line-height: 65px;
   font-weight: normal;
@@ -2566,6 +2565,7 @@ input[type="search"]::-moz-placeholder {
   margin: 0;
   cursor: pointer;
   transition: color .25s ease-in-out;
+  width: fit-content;
 }
 
 .publish__check:hover .publish__items {
@@ -2573,6 +2573,14 @@ input[type="search"]::-moz-placeholder {
 }
 
 .publish__check:hover .publish__check-box {
+  border: 1px solid #C283F3;
+}
+
+.publish__check:focus .publish__items {
+  color: #C283F3;
+}
+
+.publish__check:focus .publish__check-box {
   border: 1px solid #C283F3;
 }
 
@@ -2610,7 +2618,7 @@ input[type="search"]::-moz-placeholder {
   /* max-width: 32px; */
   font-weight: 400;
   color: #FFFFFF;
-  padding: 8px 10px;
+  padding: 8px 9px;
   border: none;
 }
 
@@ -2620,8 +2628,8 @@ input[type="search"]::-moz-placeholder {
   max-width: 73px;
   font-weight: 400;
   color: #FFFFFF;
-  background-color: #9D5CD0;
-  padding-left: 8px;
+  background-color: rgba(157,92,208,.5);
+  padding-left: 6px;
   white-space: nowrap;
 }
 
@@ -2792,7 +2800,8 @@ nav-not-slider {
 }
 
 .projects-text {
-  width: 68%;
+  width: 65%;
+  margin: 0;
   margin-bottom: 21px;
   line-height: 32px;
   font-style: normal;
@@ -2806,7 +2815,7 @@ nav-not-slider {
   margin: 0;
   font-size: 48px;
   line-height: 65px;
-  margin-bottom: 15px;
+  margin-bottom: 19px;
 }
 
 .proyect__part {
@@ -2956,7 +2965,6 @@ nav-not-slider {
 
 .slide-project img {
   filter: grayscale(1);
-  cursor: pointer;
   opacity: 0.5;
 }
 
@@ -2991,7 +2999,7 @@ nav-not-slider {
   width: 35.5%;
   padding-top: 123px;
   padding-bottom: 121px;
-  padding-left: 160px;
+  padding-left: calc((100vw - 1603px) / 2);
   padding-right: 120px;
   border: 1px solid #cacaca;
 }

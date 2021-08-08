@@ -58,15 +58,15 @@ $('.bottom-list-link').click(function(){
 
 /* ACCORDION TABS */
 
-document.querySelectorAll('.flag-item-btn').forEach(function (tabsBtn) {
+document.querySelectorAll('.flag__item-btn').forEach(function (tabsBtn) {
   tabsBtn.addEventListener('click', function (event) {
     let tab = event.currentTarget.dataset.tab;
 
-    document.querySelectorAll('.flag-item-btn').forEach(function (link) {
-      link.classList.remove('flag-item-btn_active');
+    document.querySelectorAll('.flag__item-btn').forEach(function (link) {
+      link.classList.remove('flag__item-btn_active');
     });
 
-    tabsBtn.classList.add('flag-item-btn_active');
+    tabsBtn.classList.add('flag__item-btn_active');
 
     document.querySelectorAll('.language').forEach(function (tabContent) {
       tabContent.classList.remove('language_active');
@@ -109,40 +109,40 @@ document.querySelectorAll('.artist__item').forEach(function (tabsBtn) {
   });
 });
 
-// document.querySelectorAll('.editions-accordion__checkbox').forEach(function (item) {
-//   item.addEventListener('change', function () {
-//     let dataCheckbox = item.dataset.editionitem;
-//     if (item.checked) {
-//       document.querySelectorAll('.editions-categories__box-item').forEach(function (boxItem) {
-//         if (boxItem.dataset.editionitem === dataCheckbox) {
-//           boxItem.style.display = 'block';
-//           boxItem.querySelector('input').checked = true;
+document.querySelectorAll('.editions-accordion__checkbox').forEach(function (item) {
+  item.addEventListener('change', function () {
+    let dataCheckbox = item.dataset.editionitem;
+    if (item.checked) {
+      document.querySelectorAll('.editions-categories__box-item').forEach(function (boxItem) {
+        if (boxItem.dataset.editionitem === dataCheckbox) {
+          boxItem.style.display = 'block';
+          boxItem.querySelector('input').checked = true;
 
-//           boxItem.querySelector('.box-item__remover').addEventListener('click', function () {
-//             boxItem.style.display = 'none';
-//             if (item.dataset.editionitem === dataCheckbox) {
-//               item.checked = false;
-//             }
-//           })
+          boxItem.querySelector('.box-item__remover').addEventListener('click', function () {
+            boxItem.style.display = 'none';
+            if (item.dataset.editionitem === dataCheckbox) {
+              item.checked = false;
+            }
+          })
 
-//           boxItem.querySelector('input').addEventListener('click', function () {
-//             if (!this.checked) {
-//               boxItem.style.display = 'none';
-//               item.checked = false;
-//             }
-//           })
-//         }
-//       })
-//     } else {
-//       document.querySelectorAll('.editions-categories__box-item').forEach(function (boxItem) {
-//         if (boxItem.dataset.editionitem === dataCheckbox) {
-//           boxItem.style.display = 'none';
-//           boxItem.querySelector('input').checked = true;
-//         }
-//       })
-//     }
-//   })
-// })
+          boxItem.querySelector('input').addEventListener('click', function () {
+            if (!this.checked) {
+              boxItem.style.display = 'none';
+              item.checked = false;
+            }
+          })
+        }
+      })
+    } else {
+      document.querySelectorAll('.editions-categories__box-item').forEach(function (boxItem) {
+        if (boxItem.dataset.editionitem === dataCheckbox) {
+          boxItem.style.display = 'none';
+          boxItem.querySelector('input').checked = true;
+        }
+      })
+    }
+  })
+})
 
 // document.querySelector('#acc-design-checkbox').checked = true;
 // document.querySelector('#box-design-checkbox').addEventListener('change', function () {
@@ -367,10 +367,10 @@ var swiper = new Swiper(".project-slide", {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const catalogLangBtn = document.querySelectorAll('.flag-item-btn');
+  const catalogLangBtn = document.querySelectorAll('.flag__item-btn');
   catalogLangBtn.forEach((btn) => btn.addEventListener('click', () => {
     const selectedLang = btn.dataset.lang;
-    const selectedBtn = document.querySelector('.flag-item-btn.selected');
+    const selectedBtn = document.querySelector('.flag__item-btn.selected');
     btn.classList.add('selected');
     selectedBtn.classList.remove('selected');
 
@@ -531,6 +531,7 @@ $(document).ready(function(){
     $('.filter__selected').click();
   });
 });
+
   });
   });
 

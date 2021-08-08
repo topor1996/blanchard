@@ -52,13 +52,13 @@ window.addEventListener('DOMContentLoaded', function () {
     });
     /* ACCORDION TABS */
 
-    document.querySelectorAll('.flag-item-btn').forEach(function (tabsBtn) {
+    document.querySelectorAll('.flag__item-btn').forEach(function (tabsBtn) {
       tabsBtn.addEventListener('click', function (event) {
         var tab = event.currentTarget.dataset.tab;
-        document.querySelectorAll('.flag-item-btn').forEach(function (link) {
-          link.classList.remove('flag-item-btn_active');
+        document.querySelectorAll('.flag__item-btn').forEach(function (link) {
+          link.classList.remove('flag__item-btn_active');
         });
-        tabsBtn.classList.add('flag-item-btn_active');
+        tabsBtn.classList.add('flag__item-btn_active');
         document.querySelectorAll('.language').forEach(function (tabContent) {
           tabContent.classList.remove('language_active');
         });
@@ -93,39 +93,41 @@ window.addEventListener('DOMContentLoaded', function () {
         });
         document.querySelector("[data-content=\"".concat(tab, "\"]")).classList.add('catalog-block-left_active');
       });
-    }); // document.querySelectorAll('.editions-accordion__checkbox').forEach(function (item) {
-    //   item.addEventListener('change', function () {
-    //     let dataCheckbox = item.dataset.editionitem;
-    //     if (item.checked) {
-    //       document.querySelectorAll('.editions-categories__box-item').forEach(function (boxItem) {
-    //         if (boxItem.dataset.editionitem === dataCheckbox) {
-    //           boxItem.style.display = 'block';
-    //           boxItem.querySelector('input').checked = true;
-    //           boxItem.querySelector('.box-item__remover').addEventListener('click', function () {
-    //             boxItem.style.display = 'none';
-    //             if (item.dataset.editionitem === dataCheckbox) {
-    //               item.checked = false;
-    //             }
-    //           })
-    //           boxItem.querySelector('input').addEventListener('click', function () {
-    //             if (!this.checked) {
-    //               boxItem.style.display = 'none';
-    //               item.checked = false;
-    //             }
-    //           })
-    //         }
-    //       })
-    //     } else {
-    //       document.querySelectorAll('.editions-categories__box-item').forEach(function (boxItem) {
-    //         if (boxItem.dataset.editionitem === dataCheckbox) {
-    //           boxItem.style.display = 'none';
-    //           boxItem.querySelector('input').checked = true;
-    //         }
-    //       })
-    //     }
-    //   })
-    // })
-    // document.querySelector('#acc-design-checkbox').checked = true;
+    });
+    document.querySelectorAll('.editions-accordion__checkbox').forEach(function (item) {
+      item.addEventListener('change', function () {
+        var dataCheckbox = item.dataset.editionitem;
+
+        if (item.checked) {
+          document.querySelectorAll('.editions-categories__box-item').forEach(function (boxItem) {
+            if (boxItem.dataset.editionitem === dataCheckbox) {
+              boxItem.style.display = 'block';
+              boxItem.querySelector('input').checked = true;
+              boxItem.querySelector('.box-item__remover').addEventListener('click', function () {
+                boxItem.style.display = 'none';
+
+                if (item.dataset.editionitem === dataCheckbox) {
+                  item.checked = false;
+                }
+              });
+              boxItem.querySelector('input').addEventListener('click', function () {
+                if (!this.checked) {
+                  boxItem.style.display = 'none';
+                  item.checked = false;
+                }
+              });
+            }
+          });
+        } else {
+          document.querySelectorAll('.editions-categories__box-item').forEach(function (boxItem) {
+            if (boxItem.dataset.editionitem === dataCheckbox) {
+              boxItem.style.display = 'none';
+              boxItem.querySelector('input').checked = true;
+            }
+          });
+        }
+      });
+    }); // document.querySelector('#acc-design-checkbox').checked = true;
     // document.querySelector('#box-design-checkbox').addEventListener('change', function () {
     //   if (this.checked === false) {
     //     document.querySelector('.design-item').style.display = 'none';
@@ -334,11 +336,11 @@ window.addEventListener('DOMContentLoaded', function () {
       }
     });
     document.addEventListener('DOMContentLoaded', function () {
-      var catalogLangBtn = document.querySelectorAll('.flag-item-btn');
+      var catalogLangBtn = document.querySelectorAll('.flag__item-btn');
       catalogLangBtn.forEach(function (btn) {
         return btn.addEventListener('click', function () {
           var selectedLang = btn.dataset.lang;
-          var selectedBtn = document.querySelector('.flag-item-btn.selected');
+          var selectedBtn = document.querySelector('.flag__item-btn.selected');
           btn.classList.add('selected');
           selectedBtn.classList.remove('selected');
           console.log("Selected catalog lang is '".concat(selectedLang, "'"));
