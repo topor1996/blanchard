@@ -384,7 +384,7 @@ window.addEventListener('DOMContentLoaded', function () {
         center: [55.758468, 37.601088],
         // Уровень масштабирования. Допустимые значения:
         // от 0 (весь мир) до 19.
-        zoom: 18
+        zoom: 14.3
       }); // Создание геообъекта с типом точка (метка).
 
       var myGeoObject = new ymaps.GeoObject({
@@ -395,10 +395,10 @@ window.addEventListener('DOMContentLoaded', function () {
 
         }
       });
-      var myPlacemark = new ymaps.Placemark([55.758468, 37.601088], {}, {
+      var myPlacemark = new ymaps.Placemark([55.75726634699231, 37.600369391872924], {}, {
         iconLayout: 'default#image',
         iconImageHref: 'img/mark.svg',
-        iconImageSize: [30, 42],
+        iconImageSize: [20, 42],
         iconImageOffset: [-3, -42]
       }); // Размещение геообъекта на карте.
 
@@ -470,7 +470,24 @@ window.addEventListener('DOMContentLoaded', function () {
     //     $list.hide();
     //   });
     // });
+    //  Tippy
+    //  ==================================================================================================
 
+    tippy('#tooltip-1', _defineProperty({
+      content: 'Пример современных тенденций - современная методология разработки',
+      theme: 'blanchard',
+      trigger: 'click'
+    }, "trigger", 'mouseenter click'));
+    tippy('#tooltip-2', _defineProperty({
+      content: 'Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции',
+      theme: 'blanchard',
+      trigger: 'click'
+    }, "trigger", 'mouseenter click'));
+    tippy('#tooltip-3', _defineProperty({
+      content: 'В стремлении повысить качество',
+      theme: 'blanchard',
+      trigger: 'click'
+    }, "trigger", 'mouseenter click'));
     var element = document.querySelector('#gallery__filter');
     var choices = new Choices(element, {
       itemSelectText: '',
@@ -481,6 +498,11 @@ window.addEventListener('DOMContentLoaded', function () {
     $('.choices__inner').prop('tabIndex', 0);
     $('.choices').prop('tabIndex', -1);
     $('.catalog-right-heading').prop('tabIndex', 0);
+    $('.projects-tooltip-icon').hover(function () {
+      $(this).addClass("hover");
+    }, function () {
+      $(this).removeClass("active");
+    });
     $(document).ready(function () {
       $('.gallery__filter').keypress(function (e) {
         if (e.keyCode == 13) $('.filter__selected').click();
