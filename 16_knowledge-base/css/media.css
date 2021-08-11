@@ -18,10 +18,7 @@
 }
 
 @media (max-width:1920px) {
-  .project-container {
-    padding-top: 80px;
-    padding-bottom: 79px;
-  }
+
 }
 
 @media (max-width:1913px) {
@@ -2315,7 +2312,7 @@
     bottom: -40px;
   }
   .contacts-form-block {
-    padding-left: calc((100vw - 1083px) / 2);
+    padding-left: calc((100vw - 567px) / 2);
   }
 }
 
