@@ -1223,7 +1223,7 @@ input[type="search"]::-moz-placeholder {
 /* about us */
 
 .about-container {
-  padding-top: 81px;
+  padding-top: 89px;
   padding-bottom: 71px;
 }
 
@@ -1260,8 +1260,8 @@ input[type="search"]::-moz-placeholder {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 25%;
-  margin-right: 48px;
+  width: 34%;
+  margin-right: 55px;
 }
 
 .gallery-title {
@@ -1572,6 +1572,7 @@ input[type="search"]::-moz-placeholder {
 .swiper-container {
   width: 100%;
   height: 100%;
+  padding-top: 35px;
 }
 
 .swiper-wrapper {
@@ -1586,7 +1587,7 @@ input[type="search"]::-moz-placeholder {
 }
 
 .gallery__item:nth-child(-n+9) {
-  margin-bottom: 23px !important;
+  margin-bottom: 47px !important;
 }
 
 .gallery__item {
@@ -2313,7 +2314,7 @@ input[type="search"]::-moz-placeholder {
 /* event */
 
 .event-container {
-  padding-bottom: 78px;
+  padding-bottom: 83px;
 }
 
 .event-title {
@@ -2321,7 +2322,7 @@ input[type="search"]::-moz-placeholder {
   line-height: 65px;
   font-weight: normal;
   margin: 0;
-  margin-bottom: 16px;
+  margin-bottom: -20px;
 }
 
 .event__list {
@@ -2499,12 +2500,12 @@ input[type="search"]::-moz-placeholder {
 
 .publishing__title {
   font-size: 47px;
-  line-height: 74px;
+  line-height: 78px;
   font-weight: 400;
   color: #FFFFFF;
   padding: 0;
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 2px;
 }
 
 .publishing__check-title {
@@ -2661,7 +2662,7 @@ input[type="search"]::-moz-placeholder {
   display: flex;
   flex-direction: column;
   width: 74%;
-  padding-top: 26px;
+  padding-top: 19px;
 }
 
 nav-not-slider {
@@ -2684,8 +2685,8 @@ nav-not-slider {
 
 .publish__top-btn {
   position: relative;
-  margin-bottom: 9px;
-  padding-top: 18px;
+  margin-bottom: -26px;
+  padding-top: 21px;
   display: flex;
   align-items: center;
   width: 11%;
@@ -2835,7 +2836,7 @@ nav-not-slider {
 .proyect__part {
   font-size: 25px;
   line-height: 32px;
-  padding-bottom: 23px;
+  padding-bottom: 26px;
   margin: 0;
   font-weight: normal;
 }
@@ -2844,7 +2845,9 @@ nav-not-slider {
   position: relative;
 }
 
-
+.project-slide {
+  padding-top: 0;
+}
 
 
 
@@ -2907,10 +2910,10 @@ nav-not-slider {
 
 .contacts-form-block {
   width: 35.5%;
-  padding-top: 123px;
+  padding-top: 122px;
   padding-bottom: 121px;
-  padding-left: calc((100vw - 1603px) / 2);
-  padding-right: 120px;
+  padding-left: calc((100vw - 1626px) / 2);
+  padding-right: 30px;
   border: 1px solid #cacaca;
 }
 

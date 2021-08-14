@@ -756,6 +756,9 @@
   .text-about {
     width: 100%;
   }
+  .about-title {
+    margin-bottom: 11px;
+  }
   .search-button>svg {
     width: 29px;
     height: 29px;
@@ -946,6 +949,9 @@
   .accordion .open-accordion-list {
     height: 435px !important;
   }
+  .event-container {
+    padding-bottom: 78px;
+}
   .event__book-img {
     min-height: 200px;
   }
@@ -978,12 +984,13 @@
   }
   .publishing-swiper {
     width: 72%;
+    padding-top: 28px;
   }
   .publishing__title {
-    margin-bottom: 13px;
+    margin-bottom: 8px;
   }
   .publish__top-btn {
-    margin-bottom: 10px;
+    margin-bottom: -27px;
     padding-top: 20px;
   }
   .button-prev-publish {
@@ -1268,7 +1275,7 @@
     width: 20%;
   }
   .publishing-container {
-    padding-bottom: 70px;
+    padding-bottom: 74px;
   }
   .project-container {
     padding-top: 83px;
@@ -1445,6 +1452,9 @@
 @media (max-width:768px) {
   .event__list-swapper {
     margin-bottom: 14px;
+}
+.event__list-swapper {
+  padding-top: 0;
 }
 }
 
@@ -2374,7 +2384,7 @@
     padding-bottom: 0;
   }
   .event-container {
-    padding-bottom: 13px;
+    padding-bottom: 34px;
   }
   .publish__check {
     width: auto;
