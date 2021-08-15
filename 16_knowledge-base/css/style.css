@@ -119,8 +119,8 @@ body {
 
 .container {
   max-width: 1643px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 29px;
+  padding-right: 10px;
   margin: 0 auto;
 }
 
@@ -1223,7 +1223,7 @@ input[type="search"]::-moz-placeholder {
 /* about us */
 
 .about-container {
-  padding-top: 89px;
+  padding-top: 81px;
   padding-bottom: 71px;
 }
 
@@ -1260,8 +1260,8 @@ input[type="search"]::-moz-placeholder {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 34%;
-  margin-right: 55px;
+  width: 25%;
+  margin-right: 48px;
 }
 
 .gallery-title {
@@ -1572,7 +1572,6 @@ input[type="search"]::-moz-placeholder {
 .swiper-container {
   width: 100%;
   height: 100%;
-  padding-top: 35px;
 }
 
 .swiper-wrapper {
@@ -1587,7 +1586,7 @@ input[type="search"]::-moz-placeholder {
 }
 
 .gallery__item:nth-child(-n+9) {
-  margin-bottom: 47px !important;
+  margin-bottom: 23px !important;
 }
 
 .gallery__item {
@@ -2314,7 +2313,7 @@ input[type="search"]::-moz-placeholder {
 /* event */
 
 .event-container {
-  padding-bottom: 83px;
+  padding-bottom: 78px;
 }
 
 .event-title {
@@ -2322,7 +2321,7 @@ input[type="search"]::-moz-placeholder {
   line-height: 65px;
   font-weight: normal;
   margin: 0;
-  margin-bottom: -20px;
+  margin-bottom: 16px;
 }
 
 .event__list {
@@ -2500,12 +2499,12 @@ input[type="search"]::-moz-placeholder {
 
 .publishing__title {
   font-size: 47px;
-  line-height: 78px;
+  line-height: 74px;
   font-weight: 400;
   color: #FFFFFF;
   padding: 0;
   margin: 0;
-  margin-bottom: 2px;
+  margin-bottom: 8px;
 }
 
 .publishing__check-title {
@@ -2662,7 +2661,7 @@ input[type="search"]::-moz-placeholder {
   display: flex;
   flex-direction: column;
   width: 74%;
-  padding-top: 19px;
+  padding-top: 26px;
 }
 
 nav-not-slider {
@@ -2685,8 +2684,8 @@ nav-not-slider {
 
 .publish__top-btn {
   position: relative;
-  margin-bottom: -26px;
-  padding-top: 21px;
+  margin-bottom: 9px;
+  padding-top: 18px;
   display: flex;
   align-items: center;
   width: 11%;
@@ -2836,7 +2835,7 @@ nav-not-slider {
 .proyect__part {
   font-size: 25px;
   line-height: 32px;
-  padding-bottom: 26px;
+  padding-bottom: 23px;
   margin: 0;
   font-weight: normal;
 }
@@ -2845,9 +2844,7 @@ nav-not-slider {
   position: relative;
 }
 
-.project-slide {
-  padding-top: 0;
-}
+
 
 
 
@@ -2910,10 +2907,10 @@ nav-not-slider {
 
 .contacts-form-block {
   width: 35.5%;
-  padding-top: 122px;
+  padding-top: 123px;
   padding-bottom: 121px;
-  padding-left: calc((100vw - 1626px) / 2);
-  padding-right: 30px;
+  padding-left: calc((100vw - 1602px) / 2);
+  padding-right: 115px;
   border: 1px solid #cacaca;
 }
 

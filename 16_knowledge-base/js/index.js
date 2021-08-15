@@ -273,7 +273,7 @@ var swiper = new Swiper(".gallery-slider", {
     2090: {
       slidesPerView: 3,
       slidesPerColumn: 2,
-      spaceBetween: 50
+      spaceBetween: 100
     },
   }
 });
@@ -329,8 +329,8 @@ var swiper = new Swiper(".publish-swiper", {
       spaceBetween: 140
     },
     2060: {
-      slidesPerView: 3,
-      spaceBetween: 50
+      slidesPerView: 4,
+      spaceBetween: 80
     },
   }
 });
