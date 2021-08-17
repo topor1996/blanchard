@@ -118,9 +118,8 @@ body {
 }
 
 .container {
-  max-width: 1643px;
-  padding-left: 29px;
-  padding-right: 10px;
+  max-width: 1630px;
+  padding: 0 15px;
   margin: 0 auto;
 }
 
@@ -2909,8 +2908,8 @@ nav-not-slider {
   width: 35.5%;
   padding-top: 123px;
   padding-bottom: 121px;
-  padding-left: calc((100vw - 1602px) / 2);
-  padding-right: 115px;
+  padding-left: calc((100vw - 1623px) / 2);
+  padding-right: 125px;
   border: 1px solid #cacaca;
 }
 
