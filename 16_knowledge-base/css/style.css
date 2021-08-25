@@ -2913,7 +2913,7 @@ nav-not-slider {
   width: 35.5%;
   padding-top: 123px;
   padding-bottom: 121px;
-  padding-left: calc((100vw - 1600px) / 2);
+  padding-left: calc((100vw - 1620px) / 2);
   padding-right: 125px;
   border: 1px solid #cacaca;
 }
