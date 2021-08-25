@@ -253,7 +253,7 @@ var swiper = new Swiper(".gallery-slider", {
     1000: {
       slidesPerView: 2,
       slidesPerColumn: 2,
-      spaceBetween: 45
+      spaceBetween: 30
     },
     1100: {
       slidesPerView: 3,

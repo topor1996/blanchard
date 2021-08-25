@@ -228,7 +228,7 @@ window.addEventListener('DOMContentLoaded', function () {
         1000: {
           slidesPerView: 2,
           slidesPerColumn: 2,
-          spaceBetween: 45
+          spaceBetween: 30
         },
         1100: {
           slidesPerView: 3,
@@ -248,7 +248,7 @@ window.addEventListener('DOMContentLoaded', function () {
         2090: {
           slidesPerView: 3,
           slidesPerColumn: 2,
-          spaceBetween: 50
+          spaceBetween: 100
         }
       }
     });
@@ -301,8 +301,8 @@ window.addEventListener('DOMContentLoaded', function () {
           spaceBetween: 140
         }
       }, "2060", {
-        slidesPerView: 3,
-        spaceBetween: 50
+        slidesPerView: 4,
+        spaceBetween: 80
       })
     });
     var swiper = new Swiper(".project-slide", {
