@@ -353,7 +353,7 @@ var swiper = new Swiper(".project-slide", {
       spaceBetween: 60
     },
     550: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 40
     },
     768: {
