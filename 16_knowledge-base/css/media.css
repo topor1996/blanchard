@@ -1808,9 +1808,7 @@
   .nav__burger svg {
     width: 20px;
   }
-  .header__logo {
-    width: 34%;
-  }
+
   #search__svg {
     width: 16px;
     height: 16px;
@@ -2414,6 +2412,9 @@
 @media (max-width:500px) {
   .search {
     width: 26px;
+  }
+  .header__logo {
+    width: 34%;
   }
   .event-more-btn {
     display: none;
