@@ -1360,6 +1360,10 @@
   .contacts-form-block {
     padding-bottom: 105px;
   }
+  .choices__list--dropdown.is-active {
+    z-index: 4;
+    background-color: black !important;
+  }
 }
 
 /* @media (max-width:997px) {
@@ -1615,7 +1619,7 @@
     padding-bottom: 67px;
   }
   .catalog-right-child {
-    grid-template: repeat(9, 32px)/repeat(3, 210px);
+    grid-template: repeat(12, 32px)/repeat(3, 280px);
   }
   .event__item {
     max-width: 47%;
@@ -1625,7 +1629,7 @@
     margin-bottom: 20px;
   }
   .event__item:nth-of-type(-n+1) {
-    margin-right: 31px;
+    margin-right: auto;
   }
   .event__top-text-item {
     padding-right: 15px;
