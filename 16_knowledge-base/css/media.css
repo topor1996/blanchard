@@ -1151,7 +1151,7 @@
     width: 20%;
   }
   .gallery__item {
-    height: 286px;
+    height: 288px;
   }
   .gallery-block {
     padding-top: 9px;
@@ -1895,6 +1895,7 @@
     flex-direction: row;
     border: none;
     max-width: 500px;
+    height: auto;
   }
   .gallery__item:nth-child(-n+9) {
     margin-bottom: 0px !important;
@@ -1915,7 +1916,7 @@
   }
   .navigation-gallery-slider {
     margin: 0;
-    margin-top: 106px;
+    margin-top: 24px;
     width: 45%;
   }
   .swiper-pagination-gallery {
