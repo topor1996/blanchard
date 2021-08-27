@@ -16,8 +16,6 @@
   }
 }
 
-
-
 /* @media (max-width:1913px) {
   .event__item {
     max-width: 31.1%;
@@ -35,7 +33,6 @@
     max-width: 1350px;
   }
 } */
-
 
 @media (max-width:1630px) {
   /* .container {
@@ -1089,7 +1086,7 @@
   }
   .footer__soc-item:not(:last-child) {
     margin-right: 30px;
-}
+  }
   .vk {
     width: 60px;
     height: 60px;
@@ -1605,7 +1602,6 @@
     padding-top: 16px;
     padding-bottom: 38px;
   }
-
   .open-accordion-list {
     height: 339px !important;
   }
@@ -1812,7 +1808,6 @@
   .nav__burger svg {
     width: 20px;
   }
-
   #search__svg {
     width: 16px;
     height: 16px;
@@ -2190,13 +2185,13 @@
   }
   .publishing__title {
     font-size: 28px;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
   }
   .publish-desktop {
     display: none;
   }
   .publish__price-title {
-    padding-top: 23px;
+    padding-top: 17px;
   }
   .publishing-swiper {
     display: none;
@@ -2432,6 +2427,9 @@
     max-width: 100%;
     width: 100%;
   }
+  .navigation-gallery-slider {
+    margin-top: 17px;
+  }
   .pagination-event {
     display: block;
     bottom: 20px !important;
@@ -2454,14 +2452,17 @@
   .publish__check {
     width: auto;
   }
+  .gallery__item {
+    height: auto;
+  }
   .event__book-titles {
-    margin-bottom: 31px;
+    margin-bottom: 35px;
   }
   .event__bottom-text-item {
     margin-bottom: 19px;
   }
   .event__btn {
-    margin-bottom: 41px;
+    margin-bottom: 49px;
   }
   .projects-title {
     font-size: 28px;
@@ -2511,26 +2512,26 @@
   }
   .logo-footer {
     width: 33%;
-
   }
   .publishing__check-title .ui-accordion-header-icon {
     display: block;
   }
-  .publish__check:not(:first-child) {
-    border-top: 1px solid transparent;
-  }
-  .publish__check:last-child {
+  .publish__check {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 5px;
   }
+  /* .publish__check:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  } */
   .label-publish__check {
     display: none;
   }
   .label-publish__check-active {
     display: flex;
   }
-  .label-publish__check-active .publish__check {
+  /* .label-publish__check-active .publish__check {
     border-top-color: rgba(255, 255, 255, 0.5) ;
-  }
+  } */
   .publishing__check-title {
     position: relative;
     display: flex;
