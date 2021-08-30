@@ -3118,9 +3118,23 @@ nav-not-slider {
   margin-bottom: 38px;
 }
 
+.footer-input__full-name {
+  order: 3;
+}
+
 .js-validate-error-label {
   font-size: 12px;
   color: #D11616 !important;
+}
+
+.js-validate-error-label:last-child {
+  margin-top: -15px;
+}
+
+.js-validate-error-label:not(:last-child) {
+  order: 2;
+  margin-top: -15px;
+  margin-bottom: 4px;
 }
 
 .slide-proyect1 {
